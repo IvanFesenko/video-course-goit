@@ -1,0 +1,16 @@
+.header {
+  padding-top: 15px;
+  background-image: url(../images/header/bg.png);
+  @include background-settings;
+  color: #fff;
+}
+
+.navigation {
+  @include flexible(space-between);
+}
+
+.menu__burger {
+  width: rem(28);
+  height: rem(17);
+  fill: #fff;
+}

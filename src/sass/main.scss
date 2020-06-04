@@ -1,8 +1,14 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-@import 'fonts.scss';
-@import 'variables.css';
+
 @import 'normalize.scss';
-@import 'mixins.scss';
 @import 'base.scss';
+@import 'fonts.scss';
+
+@import 'variables.scss';
+
+@import 'mixins.scss';
+@import 'base-styles.scss';
+
+@import './components/header.scss';
