@@ -1,5 +1,6 @@
 .header {
   padding-top: 15px;
+  padding-bottom: 40px;
   background-image: url(../images/header/bg.png);
   @include background-settings;
   color: #fff;
@@ -13,4 +14,76 @@
   width: rem(28);
   height: rem(17);
   fill: #fff;
+}
+
+.header-content {
+  padding: 20px 50px 0 58px;
+}
+
+.title {
+  font-family: $extrabold-font;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: rem(30);
+  margin-top: 0px;
+  margin-bottom: 42px;
+}
+
+.description {
+  font-family: $bold-font;
+  font-size: rem(13);
+  line-height: rem(19.5);
+  letter-spacing: -0.86px;
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    @include pseudo(9px, 9px, '<');
+    position: absolute;
+    top: 0;
+    left: -38px;
+    color: $blue-color;
+    font-family: $extrabold-font;
+    font-size: rem(23);
+  }
+
+  &::after {
+    @include pseudo(18px, 16px, '/>');
+    position: absolute;
+    bottom: 0;
+    right: -38px;
+    color: $blue-color;
+    font-family: $extrabold-font;
+    font-size: rem(23);
+  }
+}
+
+.title-wrapper {
+  margin-bottom: 140px;
+}
+
+.coment__title {
+  font-family: $extrabold-font;
+  font-size: rem(14);
+  text-transform: uppercase;
+  line-height: 19.5px;
+  letter-spacing: 0;
+  margin-bottom: 15px;
+}
+
+.coment__description {
+  font-family: $regular-font;
+  font-size: rem(14);
+  color: $grey-color;
+  letter-spacing: 0;
+  margin-bottom: 38px;
+}
+
+.header-btn {
+  width: 220px;
+  height: 54px;
+  @include flexible(center, center);
+  text-transform: uppercase;
+  font-size: rem(12);
+  margin: 0 auto;
 }

@@ -36,8 +36,8 @@
   align-items: $align-items;
 }
 
-@mixin pseudo($width, $height) {
-  content: '';
+@mixin pseudo($width, $height, $content: '') {
+  content: $content;
   width: $width;
   height: $height;
 }
