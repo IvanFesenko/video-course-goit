@@ -1,7 +1,7 @@
 .header {
   padding-top: 15px;
   padding-bottom: 40px;
-  background-image: url(../images/header/bg.png);
+  background-image: url(../images/1/bg.png);
   @include background-settings;
   color: #fff;
 }
@@ -82,7 +82,8 @@
 .header-btn {
   width: 220px;
   height: 54px;
-  @include flexible(center, center);
+  @include flexible(center);
+  align-items: center;
   text-transform: uppercase;
   font-size: rem(12);
   margin: 0 auto;

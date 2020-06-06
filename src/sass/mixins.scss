@@ -3,37 +3,24 @@
     @media (max-width: 599px) {
       @content;
     }
-  } @else if $size == tablet-portrait-up {
-    @media (min-width: 600px) {
+  } @else if $size == tablet {
+    @media (min-width: 768px) {
       @content;
     }
-  } @else if $size == tablet-landscape-up {
+  } @else if $size == desktop {
     @media (min-width: 900px) {
       @content;
     }
-  } @else if $size == desktop-min {
-    @media (min-width: 1024px) {
-      @content;
-    }
-  } @else if $size == desktop-up {
-    @media (min-width: 1200px) {
-      @content;
-    }
-  } @else if $size == big-desktop-up {
-    @media (min-width: 1800px) {
-      @content;
-    }
-  }
+  } 
 }
 
 @function rem($px) {
   @return ($px / 16) + rem;
 }
 
-@mixin flexible($justify: center, $align-items: flex-start) {
+@mixin flexible($justify: center) {
   display: flex;
   justify-content: $justify;
-  align-items: $align-items;
 }
 
 @mixin pseudo($width, $height, $content: '') {
@@ -50,4 +37,28 @@
   background-repeat: $repeat;
   background-position: $position;
   background-size: $size;
+}
+
+@mixin light-font {
+  font-family: $light-font;
+  font-weight: 300;
+}
+
+@mixin regular-font {
+  font-family: $regular-font;
+}
+
+@mixin medium-font {
+  font-family: $medium-font;
+  font-weight: 500;
+}
+
+@mixin bold-font {
+  font-family: $bold-font;
+  font-weight: 700;
+}
+
+@mixin extrabold-font {
+  font-family: $bold-font;
+  font-weight: 700;
 }

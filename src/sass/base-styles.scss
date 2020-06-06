@@ -12,15 +12,100 @@
 }
 
 .container {
-  max-width: 480px; //674, 782
+  max-width: 480px; 
   padding: 0px 15px;
   margin: 0 auto;
+
+  @include for-size(tablet) {
+    max-width: 674px;
+  }
+
+  @include for-size(desktop) {
+    max-width: 720px;
+  }
 }
 
 .btn {
-  background-color: #ff6b08;
+  background-color: $orange-color;
   color: #fff;
   font-family: $extrabold-font;
   @include flexible;
+  align-items: center;
   letter-spacing: 1.11px;
+}
+
+.section-title {
+  @include extrabold-font;
+  font-size: rem(18);
+
+  @include for-size(tablet) {
+    font-size: rem(27);
+  }
+
+    @include for-size(desktop) {
+    font-size: rem(30);
+  }
+
+}
+
+.section-description {
+  @include medium-font;
+  position: relative;
+  font-size: rem(14);
+
+  &::before {
+    @include pseudo(21px, 3px);
+    position: absolute;
+    left: -37px;
+    top: 6px;
+    background-color: $black-color;
+   
+  }
+
+  @include for-size(tablet) {
+    font-size: rem(9);
+  }
+
+    @include for-size(desktop) {
+    font-size: rem(10);
+  }
+   
+}
+
+.section-comment {
+  @include medium-font;
+  font-size: rem(14);
+  color: $orange-color;
+  position: relative;
+
+  &::before {
+    @include pseudo(21px, 3px, '/');
+    position: absolute;
+    left: -37px;
+    top: 6px;
+    color: $black-color;
+    @include extrabold-font;
+    font-size: rem(30);
+  }
+
+
+  @include for-size(tablet) {
+    font-size: rem(9);
+  }
+
+    @include for-size(desktop) {
+    font-size: rem(10);
+  }
+   
+ 
+
+}
+
+.black-bg {
+  color: $white-color;
+  background-color: $black-color;
+}
+
+.blue-bg {
+  background-color: $blue-color;
 }
