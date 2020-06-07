@@ -1,9 +1,13 @@
 .profesion {
   padding-top: 66px;
+
   @include for-size (tablet) {
     padding-top: 100px;
   }
 
+  @include for-size (desktop) {
+    padding: 60px 0px;
+  }
 
   &__content {
     @include for-size (tablet) {
@@ -93,6 +97,10 @@
     @include for-size (tablet) {
       max-width: 138px;
     }
+
+    @include for-size (desktop) {
+      max-width: 152px;
+    }
   }
 
   &__coment-title {
@@ -107,19 +115,29 @@
       font-size: rem(9);
       line-height: rem(14);
     }
+
+    @include for-size (desktop) {
+      font-size: rem(10);
+      line-height: rem(16.5);
+    }
   }
 
   &__coment-description {
     font-weight: 400;
     font-size: rem(14);
     line-height: rem(20);
-    letter-spacing: -0.0675;
     color: $text-grey-color;
 
     @include for-size (tablet) {
-      padding-right: 10    px;
+      padding-right: 10px;
       font-size: rem(8);
       line-height: rem(12);
+    }
+
+    @include for-size (desktop) {
+      padding-right: 5px;
+      font-size: rem(9);
+      line-height: rem(13);
     }
   }
 }
