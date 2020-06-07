@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Acrom-Light';
+  font-family: 'Acrom';
   font-style: normal;
   font-weight: 300;
   src: local(''), url('../fonts/Acrom-Light.woff2') format('woff2'),
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Acrom-Regular';
+  font-family: 'Acrom';
   font-style: normal;
   font-weight: 400;
   src: local(''), url('../fonts/Acrom-Regular.woff2') format('woff2'),
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Acrom-Medium';
+  font-family: 'Acrom';
   font-style: normal;
   font-weight: 500;
   src: local(''), url('../fonts/Acrom-Medium.woff2') format('woff2'),
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Acrom-Bold';
+  font-family: 'Acrom';
   font-style: normal;
   font-weight: 700;
   src: local(''), url('../fonts/Acrom-Bold.woff2') format('woff2'),
@@ -31,9 +31,9 @@
 }
 
 @font-face {
-  font-family: 'Acrom-ExtraBold';
+  font-family: 'Acrom';
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   src: local(''), url('../fonts/Acrom-ExtraBold.woff2') format('woff2'),
     url('../fonts/Acrom-ExtraBold.woff') format('woff');
 }

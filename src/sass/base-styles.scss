@@ -28,14 +28,16 @@
 .btn {
   background-color: $orange-color;
   color: #fff;
-  font-family: $extrabold-font;
+  font-family: 'Acrom', sans-serif;
+  font-weight: 800;
   @include flexible;
   align-items: center;
   letter-spacing: 1.11px;
 }
 
 .section-title {
-  @include extrabold-font;
+  font-family: 'Acrom', sans-serif;
+  font-weight: 800;
   font-size: rem(18);
 
   @include for-size(tablet) {
@@ -49,7 +51,8 @@
 }
 
 .section-description {
-  @include medium-font;
+  font-family: 'Acrom', sans-serif;
+  font-weight: 500;
   position: relative;
   font-size: rem(14);
 
@@ -73,7 +76,8 @@
 }
 
 .section-comment {
-  @include medium-font;
+  font-family: 'Acrom', sans-serif;
+  font-weight: 500;
   font-size: rem(14);
   color: $orange-color;
   position: relative;
@@ -84,7 +88,8 @@
     left: -37px;
     top: 6px;
     color: $black-color;
-    @include extrabold-font;
+    font-family: 'Acrom', sans-serif;
+    font-weight: 800;
     font-size: rem(30);
   }
 
@@ -97,8 +102,6 @@
     font-size: rem(10);
   }
    
- 
-
 }
 
 .black-bg {

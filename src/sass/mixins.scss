@@ -39,26 +39,3 @@
   background-size: $size;
 }
 
-@mixin light-font {
-  font-family: $light-font;
-  font-weight: 300;
-}
-
-@mixin regular-font {
-  font-family: $regular-font;
-}
-
-@mixin medium-font {
-  font-family: $medium-font;
-  font-weight: 500;
-}
-
-@mixin bold-font {
-  font-family: $bold-font;
-  font-weight: 700;
-}
-
-@mixin extrabold-font {
-  font-family: $bold-font;
-  font-weight: 700;
-}
