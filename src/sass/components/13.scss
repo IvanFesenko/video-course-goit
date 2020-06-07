@@ -1,0 +1,53 @@
+.profesion {
+  padding-top: 66px;
+
+  &__title-wrapper {
+    margin: 0px auto 26px;
+    max-width: 232px;
+  }
+
+  &__section-title {
+    margin-bottom: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__section-description {
+    padding-left: rem(26);
+    letter-spacing: rem(-0.313);
+    line-height: rem(20);
+
+    &::before {
+      width: 15px;
+      height: 4px;
+      left: 0px;
+    }
+  }
+
+  &__img-wrapper {
+    margin-bottom: 38px;
+  }
+
+  &__coment-wrapper {
+    margin: 0px auto;
+    max-width: 232px;
+  }
+
+  &__coment-title {
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: rem(14);
+    line-height: rem(20);
+    text-transform: uppercase;
+
+  }
+
+  &__coment-description {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(20);
+    letter-spacing: -0.0675;
+    color: $text-grey-color;
+
+  }
+}
