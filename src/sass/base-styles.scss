@@ -12,7 +12,7 @@
 }
 
 .container {
-  max-width: 480px; 
+  max-width: 480px;
   padding: 0px 15px;
   margin: 0 auto;
 
@@ -44,7 +44,7 @@
     font-size: rem(27);
   }
 
-    @include for-size(desktop) {
+  @include for-size(desktop) {
     font-size: rem(30);
   }
 
@@ -62,17 +62,17 @@
     left: -37px;
     top: 6px;
     background-color: $black-color;
-   
+
   }
 
   @include for-size(tablet) {
     font-size: rem(9);
   }
 
-    @include for-size(desktop) {
+  @include for-size(desktop) {
     font-size: rem(10);
   }
-   
+
 }
 
 .section-comment {
@@ -98,10 +98,10 @@
     font-size: rem(9);
   }
 
-    @include for-size(desktop) {
+  @include for-size(desktop) {
     font-size: rem(10);
   }
-   
+
 }
 
 .black-bg {
