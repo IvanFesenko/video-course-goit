@@ -72,7 +72,7 @@
         width: 29px;
       }
 
-      @include for-size (tablet) {
+      @include for-size (desktop) {
         width: 32px;
       }
     }

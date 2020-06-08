@@ -1,0 +1,141 @@
+.registration {
+  padding-top: rem(72);
+
+  @include for-size (tablet) {
+    padding-top: rem(100);
+  }
+
+  &__content {
+    @include for-size (tablet) {
+      @include flexible (space-between)
+    }
+  }
+
+  &__title-wrapper {
+    margin: 0px auto 42px;
+    max-width: rem(210);
+    position: relative;
+
+    @include for-size (tablet) {
+      max-width: rem(282);
+      margin-bottom: 0px;
+    }
+
+
+    &::before {
+      @include pseudo(auto, auto, 'go');
+      position: absolute;
+      transform: rotate(90deg);
+      left: rem(-146);
+      top: rem(14);
+      font-weight: 700;
+      font-size: rem(100);
+      color: rgb(247, 247, 247);
+      text-transform: uppercase;
+    }
+  }
+
+  &__section-title {
+    margin-bottom: rem(22);
+    line-height: rem(24);
+
+    @include for-size (tablet) {
+      line-height: rem(34);
+    }
+  }
+
+  &__section-title--br {
+    display: block;
+  }
+
+  &__section-description {
+    margin-bottom: rem(32);
+    padding-left: rem(14);
+    line-height: rem(20);
+
+    @include for-size (tablet) {
+      padding-left: rem(46);
+      padding-right: rem(56);
+      line-height: rem(14);
+    }
+
+    &::before {
+      width: rem(14);
+      height: rem(4);
+      left: rem(-14);
+
+      @include for-size (tablet) {
+        width: rem(29);
+        height: rem(5);
+      }
+    }
+  }
+
+  &__btn {
+    font-size: rem(12);
+    text-transform: uppercase;
+    line-height: 1.5;
+    width: rem(210);
+    height: rem(44);
+    box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
+
+    @include for-size (tablet) {
+      width: rem(147);
+      height: rem(29);
+      font-size: rem(7);
+      box-shadow: 0px 7px 10px 0px rgba(196, 87, 15, 0.26);
+      transform: translateX(46px);
+    }
+  }
+
+  &__coment-wrapper {
+    margin: 0px auto;
+    max-width: rem(300);
+  }
+
+  &__coment-description {
+    margin-bottom: rem(28);
+    font-weight: 700;
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $black-color;
+
+    &::before {
+      @include pseudo(auto, auto, 'p. s. :');
+      display: block;
+      margin-bottom: rem(13);
+      font-weight: 800;
+      font-size: rem(20);
+      line-height: rem(24);
+      color: $black-color;
+      text-transform: uppercase;
+    }
+  }
+
+  &__coment-text {
+    margin-bottom: rem(28);
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $text-grey-color;
+    letter-spacing: rem(-0.632);
+  }
+
+  &__coment-text span {
+    font-weight: 700;
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $black-color;
+    letter-spacing: rem(-0.715);
+  }
+
+  &__link {
+    display: block;
+    margin-left: auto;
+    width: max-content;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $orange-color;
+  }
+}
