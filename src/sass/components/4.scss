@@ -49,7 +49,7 @@
       margin-bottom: 0;
     }
     @include for-size(desktop){
-      font-size: 8.75px;
+      font-size: rem(8.75);
     }
   }
   &-item {
@@ -75,20 +75,20 @@
   padding-right: rem(5);
   text-transform: uppercase;
   width: max-content;  
-  margin-bottom: 8px;
+  margin-bottom: rem(8);
   @include for-size(tablet){
     padding-left: rem(2);
   padding-right: rem(2);
-  margin-bottom: 2px;
+  margin-bottom: rem(2);
   }
   
 }
 .wrapper-title__item-sc {
   text-transform: uppercase;
-  padding-right: 5px;
+  padding-right: rem(5);
   @include for-size(tablet){
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: rem(2);
+    padding-right: rem(2);
     width: max-content; 
 
   }
@@ -98,10 +98,10 @@
   font-weight: 600;
   @include for-size(tablet){
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: rem(8);
   }
   @include for-size(tablet){
-    font-size: 10px;
+    font-size: rem(10);
   }
 }
 
@@ -121,7 +121,7 @@
   @include for-size(tablet){
     width: 250px;
     text-align: left; 
-    line-height: 36px;
+    line-height: rem(36);
   } 
   @include for-size(desktop){
     width: 265px;
@@ -139,19 +139,19 @@
       left:rem(2);
       width: rem(14);
       @include for-size(tablet){
-        width: 29px;
-        height: 4px;
+        width: rem(29);
+        height: rem(4);
       } 
     }
     @include for-size(tablet){
-      margin-left: 60px;
+      margin-left: rem(60);
       padding-left: rem(38);
       max-width: 200px;
-      font-size: 9px;
-      line-height: 13px;
+      font-size: rem(9);
+      line-height: rem(13);
     } 
     @include for-size(desktop){
-      margin-left: 70px;
+      margin-left: rem(70);
     }  
   
   }
@@ -172,7 +172,7 @@ mark {
   @include for-size(tablet){
     padding-left: 0;
     padding-right: rem(75);
-    margin-left: 90px;
+    margin-left: rem(90);
   } 
   @include for-size(desktop){
     margin-left: 100px;
@@ -201,15 +201,15 @@ mark {
     font-size: rem(13.5);
     margin-bottom: rem(12);
     @include for-size(tablet){
-      font-size: 9px;
+      font-size: rem(9);
       margin-bottom: rem(7);
     } 
   }
   &__description {
     font-size: rem(13.5);
     @include for-size(tablet){
-      font-size: 8px;
-      line-height: 11px;
+      font-size: rem(8);
+      line-height: rem(11);
     } 
   }
 }
