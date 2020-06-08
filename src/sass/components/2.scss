@@ -1,0 +1,10 @@
+.motivation {
+  padding-top: 54px;
+
+  &__description {
+    font-size: rem(13);
+    line-height: 19.5px;
+    color: $black-color;
+    font-weight: 500;
+  }
+}
