@@ -12,7 +12,7 @@
 }
 
 .container {
-  max-width: 480px; 
+  max-width: 480px;
   padding: 0px 15px;
   margin: 0 auto;
 
@@ -39,15 +39,15 @@
   font-family: 'Acrom', sans-serif;
   font-weight: 800;
   font-size: rem(18);
+  text-transform: uppercase;
 
   @include for-size(tablet) {
     font-size: rem(27);
   }
 
-    @include for-size(desktop) {
+  @include for-size(desktop) {
     font-size: rem(30);
   }
-
 }
 
 .section-description {
@@ -62,17 +62,15 @@
     left: -37px;
     top: 6px;
     background-color: $black-color;
-   
   }
 
   @include for-size(tablet) {
     font-size: rem(9);
   }
 
-    @include for-size(desktop) {
+  @include for-size(desktop) {
     font-size: rem(10);
   }
-   
 }
 
 .section-comment {
@@ -93,15 +91,13 @@
     font-size: rem(30);
   }
 
-
   @include for-size(tablet) {
     font-size: rem(9);
   }
 
-    @include for-size(desktop) {
+  @include for-size(desktop) {
     font-size: rem(10);
   }
-   
 }
 
 .black-bg {
