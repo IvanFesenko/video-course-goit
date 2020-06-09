@@ -13,39 +13,96 @@
 
   @include for-size(desktop) {
     background-image: url(../images/1/bg-1200.png);
+    padding-top: 24px;
+    padding-bottom: 106px;
   }
-
 }
 
-.navigation {
+.navigation .container {
   @include flexible(space-between);
+
+  @include for-size(desktop) {
+    max-width: 1200px;
+    padding: 0 38px;
+  }
 }
 
-.menu__burger {
-  width: rem(28);
-  height: rem(17);
-  fill: #fff;
+.logo-wrapper {
+  position: relative;
+}
 
-  @include for-size (tablet) {
-    width: rem(13);
-    height: rem(9);
+.pseuso-numbers {
+  display: none;
+
+  &__one {
+    font-size: 16px;
+    transform: rotate(270deg);
+    display: inline-block;
+  }
+  &__two {
+    font-size: 9px;
   }
 
+  @include for-size(tablet) {
+    display: block;
+    font-weight: 300;
+    position: absolute;
+    bottom: -386px;
+    left: 0;
+  }
+
+  @include for-size(desktop) {
+    bottom: -444px;
+  }
+}
+
+.menu {
+  position: relative;
+
+  &__burger {
+    width: rem(28);
+    height: rem(17);
+    fill: #fff;
+
+    @include for-size(tablet) {
+      width: rem(13);
+      height: rem(9);
+    }
+  }
+}
+
+.menu .social-list {
+  display: none;
+  &__item-link--icon {
+    width: 9px;
+    height: 9px;
+    fill: $white-color;
+  }
+
+  @include for-size(tablet) {
+    @include flexible(space-between);
+    width: 36px;
+    position: absolute;
+    right: 0;
+    bottom: -280px;
+  }
+
+  @include for-size(desktop) {
+    bottom: -444px;
+  }
 }
 
 .header-content {
   padding: 20px 50px 0 58px;
 
-  @include for-size (tablet) {
+  @include for-size(tablet) {
     padding: 45px 0 0 0;
     @include flexible(space-between);
   }
-
 }
 
 .title {
-  
-  font-weight: 800;  
+  font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   font-size: rem(30);
@@ -55,7 +112,9 @@
   &--tablet {
     display: none;
     position: relative;
-    &::before{
+    line-height: 56.08px;
+
+    &::before {
       @include pseudo(46px, 8px);
       position: absolute;
       background-color: $white-color;
@@ -63,26 +122,23 @@
       left: 50%;
     }
 
-    &::after{
+    &::after {
       @include pseudo(57px, 8px);
       position: absolute;
       background-color: $white-color;
       top: 80%;
       left: 2%;
-      
     }
-
-
   }
-  &-span{
+  &-span {
     display: block;
     padding-left: 80px;
   }
 
-  @include for-size (tablet) {
+  @include for-size(tablet) {
     font-size: rem(45);
     text-align: start;
-    
+
     &--mobile {
       display: none;
     }
@@ -90,8 +146,12 @@
       display: block;
     }
   }
-}
 
+  @include for-size(desktop) {
+    line-height: 62.5px;
+    font-size: rem(50);
+  }
+}
 
 .description {
   font-weight: 700;
@@ -128,52 +188,46 @@
     margin-bottom: 25px;
     line-height: 13.46px;
 
-    &::before{
+    &::before {
       font-size: rem(13);
       left: -15px;
     }
-    &::after{
+    &::after {
       font-size: rem(13);
     }
-
-
   }
-
 }
 
 .title-wrapper {
   margin-bottom: 140px;
 
   @include for-size(tablet) {
-    max-width: 354px;
+    flex: 0 0 58.333333%;
     margin-bottom: 0;
   }
-
 }
 
-.description-wrapper{
+.description-wrapper {
   @include for-size(tablet) {
     padding-left: 55px;
     padding-right: 118px;
   }
 }
 
-
-.coment-wrapper{
+.coment-wrapper {
   @include for-size(tablet) {
-    max-width: 150px;
+    flex: 0 0 25%;
   }
 }
 
 .coment__title {
-  
   font-weight: 800;
   font-size: rem(14);
   text-transform: uppercase;
   line-height: 19.5px;
   letter-spacing: 0;
   margin-bottom: 15px;
-  @include for-size(tablet){
+  @include for-size(tablet) {
     font-size: rem(11);
     line-height: 16.82px;
   }
@@ -186,13 +240,11 @@
   letter-spacing: 0;
   margin-top: 0;
   margin-bottom: 38px;
-  
-  @include for-size(tablet){
+
+  @include for-size(tablet) {
     font-size: rem(10);
     line-height: 13.46px;
-    
   }
-
 }
 
 .header-btn {
@@ -203,7 +255,7 @@
   text-transform: uppercase;
   font-size: rem(12);
   margin: 0 auto;
-  
+
   &--tablet {
     display: none;
   }
@@ -213,7 +265,6 @@
     height: 29px;
     font-size: rem(7);
     letter-spacing: 1.25px;
-    
 
     &--tablet {
       display: flex;
@@ -223,8 +274,5 @@
     &--mobile {
       display: none;
     }
-
-
   }
-
 }

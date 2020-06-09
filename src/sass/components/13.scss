@@ -1,0 +1,140 @@
+.profesion {
+  padding-top: 66px;
+
+  @include for-size (tablet) {
+    padding-top: 100px;
+  }
+
+  @include for-size (desktop) {
+    padding: 60px 0px;
+  }
+
+  &__content {
+    @include for-size (tablet) {
+      @include flexible (space-between)
+    }
+  }
+
+
+  &__title-wrapper {
+    margin: 0px auto 26px;
+    max-width: 232px;
+
+    @include for-size (tablet) {
+      max-width: 240px;
+      margin-bottom: 0px;
+    }
+
+    @include for-size (desktop) {
+      max-width: 268px;
+    }
+  }
+
+  &__section-title {
+    margin-bottom: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    @include for-size (tablet) {
+      line-height: 34px;
+    }
+
+    @include for-size (desktop) {
+      line-height: 38px;
+    }
+  }
+
+  &__section-description {
+    padding-left: rem(26);
+    letter-spacing: rem(-0.315);
+    line-height: rem(20);
+
+    @include for-size (tablet) {
+      padding-left: rem(46);
+      padding-right: rem(56);
+      line-height: rem(14);
+      letter-spacing: rem(0);
+    }
+
+    @include for-size (desktop) {
+      padding-left: rem(52);
+      padding-right: rem(62) ;
+      line-height: rem(15);
+      letter-spacing: rem(0);
+    }
+
+    &::before {
+      width: 15px;
+      height: 4px;
+      left: 0px;
+
+      @include for-size (tablet) {
+        width: 29px;
+      }
+
+      @include for-size (tablet) {
+        width: 32px;
+      }
+    }
+  }
+
+  &__img-wrapper {
+    margin-bottom: 38px;
+
+    @include for-size (tablet) {
+      max-width: 182px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__coment-wrapper {
+    margin: 0px auto;
+    max-width: 232px;
+
+    @include for-size (tablet) {
+      max-width: 138px;
+    }
+
+    @include for-size (desktop) {
+      max-width: 152px;
+    }
+  }
+
+  &__coment-title {
+    margin-bottom: 14px;
+    font-weight: 800;
+    font-size: rem(14);
+    line-height: rem(20);
+    text-transform: uppercase;
+
+    @include for-size (tablet) {
+      padding-right: 36px;
+      font-size: rem(9);
+      line-height: rem(14);
+    }
+
+    @include for-size (desktop) {
+      font-size: rem(10);
+      line-height: rem(16.5);
+    }
+  }
+
+  &__coment-description {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $text-grey-color;
+
+    @include for-size (tablet) {
+      padding-right: 10px;
+      font-size: rem(8);
+      line-height: rem(12);
+    }
+
+    @include for-size (desktop) {
+      padding-right: 5px;
+      font-size: rem(9);
+      line-height: rem(13);
+    }
+  }
+}

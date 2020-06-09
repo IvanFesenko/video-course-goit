@@ -1,0 +1,233 @@
+.ninth {
+  position: relative;
+  padding-top: rem(8);
+  padding-bottom: rem(30);
+
+  @include for-size(tablet) {
+    padding-top: rem(44);
+    padding-bottom: rem(40);
+  }
+
+  &-container {
+    position: relative;
+
+    @include for-size(tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    @include for-size(mobile) {
+      margin: 0 auto;
+      width: rem(200);
+      margin-bottom: rem(18);
+      line-height: rem(24);
+    }
+
+    @include for-size(tablet) {
+      max-width: rem(220);
+      margin-bottom: rem(22);
+      line-height: rem(36);
+    }
+
+    @include for-size(desktop) {
+      line-height: rem(40);
+    }
+  }
+
+  &__description {
+    max-width: rem(280);
+    font-weight: 500;
+
+    @include for-size(mobile) {
+      margin: 0 auto;
+      margin-bottom: rem(56);
+    }
+    @include for-size(tablet) {
+      max-width: rem(130);
+      margin: 0 auto;
+    }
+  }
+
+  &__title-wrapper {
+    @include for-size(tablet) {
+      max-width: rem(200);
+    }
+
+    @include for-size(desktop) {
+      max-width: rem(220);
+    }
+  }
+}
+
+.ordered {
+  &__list {
+    counter-reset: l-counter;
+    margin: 0 auto;
+
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: rem(300);
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 10px;
+
+    &::after {
+      display: inline-block;
+      position: absolute;
+      content: '';
+      background-color: $blue-color;
+      width: rem(10);
+      height: rem(10);
+      top: rem(28);
+      left: rem(22);
+      transform: translateX(-50%);
+
+      @include for-size(tablet) {
+        top: rem(22);
+        left: rem(16);
+      }
+    }
+
+    @include for-size(mobile) {
+      max-width: rem(340);
+
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+
+    @include for-size(tablet) {
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: rem(10);
+      }
+    }
+  }
+
+  &__wrap {
+    position: relative;
+
+    margin: 0 auto;
+
+    @include for-size(mobile) {
+      max-width: rem(240);
+    }
+
+    @include for-size(tablet) {
+      max-width: rem(150);
+      padding-left: rem(40);
+    }
+
+    &::before {
+      content: counter(l-counter, decimal-leading-zero) '.';
+      counter-increment: l-counter;
+      color: $black-color;
+      display: block;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      left: rem(-60);
+      font-weight: 700;
+      font-size: rem(24.54);
+
+      @include for-size(tablet) {
+        font-size: rem(16.82);
+        left: rem(-6);
+      }
+
+      @include for-size(desktop) {
+        font-size: rem(18.75);
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(13.5);
+    line-height: rem(19.5);
+    text-transform: uppercase;
+    font-weight: 900;
+
+    @include for-size(tablet) {
+      font-size: rem(8.97);
+      line-height: rem(14.58);
+    }
+
+    @include for-size(desktop) {
+      font-size: rem(10);
+      line-height: rem(16.25);
+    }
+  }
+
+  &__text {
+    font-size: rem(13.5);
+    font-weight: 400;
+
+    @include for-size(tablet) {
+      font-size: rem(7.85);
+      line-height: rem(11.78);
+    }
+
+    @include for-size(desktop) {
+      font-size: rem(8.75);
+      line-height: rem(11.25);
+    }
+  }
+}
+
+.bg-ninth {
+  position: absolute;
+  font-weight: 800;
+  color: $black-color;
+  opacity: 0.05;
+  outline: 1px solid red;
+  z-index: -1;
+  top: rem(-50);
+
+  @include for-size(tablet) {
+    top: rem(-70);
+    left: rem(100);
+  }
+
+  &__numb {
+    position: absolute;
+    top: 0;
+    font-size: rem(299);
+  }
+
+  &__text {
+    position: absolute;
+    font-size: rem(82);
+    transform: rotateZ(90deg);
+    top: rem(127);
+    left: rem(84);
+    text-transform: uppercase;
+  }
+}
+
+.ninth {
+  &__ordered-list {
+    margin-bottom: rem(40);
+
+    @include for-size(tablet) {
+      margin-bottom: rem(26);
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: rem(30);
+    }
+  }
+
+  &__section-comment {
+    max-width: rem(320);
+    margin-left: rem(40);
+  }
+}
