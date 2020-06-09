@@ -12,7 +12,7 @@
   padding-top: 20px;
   padding-bottom: 40px;
   @include for-size(tablet){
-      max-height: 465px;
+      max-height: 470px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -41,6 +41,9 @@
     margin: 0;
     order: 3;
   } 
+  @include for-size(desktop){
+    width: 50%;
+  } 
   &>.section-title {
     text-transform: uppercase;
     font-size: rem(18);
@@ -48,6 +51,10 @@
     @include for-size(tablet){
       font-size: rem(27);
       margin-top: 15px;
+    } 
+    @include for-size(desktop){
+      margin-top: 25px;
+      font-size: 30px;
     } 
   }
   &>.section-description {
@@ -59,6 +66,10 @@
       width: 235px;
       padding-left: 47px;
       margin-bottom: 40px;
+    } 
+    @include for-size(desktop){
+      font-size: rem(10);
+      width: 250px;
     } 
     &::before {
       left:rem(2);
@@ -95,21 +106,35 @@
   width: 305px;
   font-size: rem(13.5);
   margin: auto;
-  @include for-size(tablet){
-    margin: 0;
-    width: 196px;
- }
-  
+    @include for-size(tablet){
+      margin: 0;
+      width: 196px;
+    }  
   }
   &> .bullet-list .bullet-list__title {
+    text-transform: uppercase;
+    margin-bottom: 14px;
     padding-left: 24px;
     @include for-size(tablet){
+      font-size: 10px;
       padding: 0;
       margin-bottom: 14px;
    }
   }
+  &> .bullet-list .bullet-list__description {
+    @include for-size(tablet){
+      font-size: rem(8);
+   }
+    @include for-size(desktop){
+      font-size: rem(8.75);
+   }
+  }
   &> .bullet-list .bullet-list__item {
+    position: relative;
     &::before {
+      @include pseudo(rem(7), rem(7));
+      position: absolute;
+      background-color: $black-color;
       left: rem(0);
       top: rem(5);
       @include for-size(tablet){
@@ -122,6 +147,9 @@
     @include for-size(tablet){
       width: auto;
    }
+   @include for-size(desktop){
+    width: 220px;
+ }
     
   }
 }

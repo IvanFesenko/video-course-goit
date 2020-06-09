@@ -7,6 +7,7 @@
   }
   
 }
+
 .section-six {
   padding-top: rem(34);
   padding-bottom: rem(40);
@@ -15,12 +16,7 @@
   }
   
 }
-.warning {
-  @include for-size(tablet){
-    display: flex;
-    justify-content: space-between;
-  }
-}
+
 .substrate-text {
   text-transform: uppercase;
   font-weight: 800;
@@ -36,9 +32,12 @@
       font-size: rem(156);
     }
 }
+
 .warning {
   @include for-size(tablet){
     min-width: 274px;
+    display: flex;
+    justify-content: space-between;
   }
   @include for-size(desktop){
     min-width: 305px;
@@ -74,43 +73,6 @@
     }
   }
   
-}
-
-
-.wrapper-title__item {
-  color: $white-color;
-  padding-left: rem(5);
-  padding-right: rem(5);
-  text-transform: uppercase;
-  width: max-content;  
-  margin-bottom: rem(8);
-  @include for-size(tablet){
-    padding-left: rem(2);
-  padding-right: rem(2);
-  margin-bottom: rem(2);
-  }
-  
-}
-.wrapper-title__item-sc {
-  text-transform: uppercase;
-  padding-right: rem(5);
-  @include for-size(tablet){
-    padding-left: rem(2);
-    padding-right: rem(2);
-    width: max-content; 
-
-  }
-}
-
-.wrapper-description-bold {
-  font-weight: 600;
-  @include for-size(tablet){
-    display: block;
-    margin-bottom: rem(8);
-  }
-  @include for-size(tablet){
-    font-size: rem(10);
-  }
 }
 
 .warning__text{
@@ -171,28 +133,37 @@
     }  
   
   }
-  
+  &> .bullet-list .bullet-list__item:nth-child(-n+4) {
+    margin-bottom: 26px;
+    @include for-size(tablet){
+      margin-bottom: 16px;
+    }
+    @include for-size(desktop){
+      margin-bottom: 24px;
+    }
+  }
 }
+
 .section-title-br {
   display: block;
 }
 
-.warning__text> .bullet-list {
-  // padding-left: rem(90);
-  // padding-right: rem(40);
-  padding: 0;
-  margin: auto;
-  width: 330px;
-  @include for-size(tablet){
-    padding-left: rem(30);
-    padding-right: 0;
-    margin-left: 0;
-    width: 250px;
-  } 
-  @include for-size(desktop){
-    width: 290px;
-  } 
-  &__item {
+.warning__text {
+  &> .bullet-list {
+    padding: 0;
+    margin: auto;
+    width: 330px;
+    @include for-size(tablet){
+      padding-left: rem(30);
+      padding-right: 0;
+      margin-left: 0;
+      width: 250px;
+    } 
+    @include for-size(desktop){
+      width: 290px;
+    } 
+  }  
+  &> .bullet-list .bullet-list__item {
     position: relative;
     &::before {
       @include pseudo(rem(7), rem(7));
@@ -206,21 +177,18 @@
       left: rem(-30);
     } 
     }
-    &+& {
-      margin-top: rem(15);
-    }
-  }
-  &__title {
+  }  
+  &> .bullet-list .bullet-list__title {
     text-transform: uppercase;
     font-weight: 900;
     font-size: rem(13);
     margin-bottom: rem(6);
     @include for-size(tablet){
       font-size: rem(9);
-      margin-bottom: rem(7);
+      margin-bottom: 4px;
     } 
   }
-  &__description {
+  &> .bullet-list .bullet-list__description {
     font-size: rem(13);
     @include for-size(tablet){
       font-size: rem(8);
@@ -272,13 +240,3 @@
     } 
   }
 }
-
-
-
-
-
-
-
-
-
-
