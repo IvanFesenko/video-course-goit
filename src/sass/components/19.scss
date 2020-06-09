@@ -41,7 +41,7 @@
       top: rem(14);
       font-weight: 700;
       font-size: rem(100);
-      color: rgb(247, 247, 247);
+      color: $pseudo-spaces-color;
       text-transform: uppercase;
 
       @include for-size (tablet) {
@@ -116,6 +116,11 @@
     width: rem(210);
     height: rem(44);
     box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
+    transition: 0.3s linear;
+
+    &:hover {
+      background-color: $accent-blue-color;
+    }
 
     @include for-size (tablet) {
       width: rem(147);
@@ -257,4 +262,14 @@
       line-height: rem(15);
     }
   }
+}
+.Rectangle_37 {
+  background-color: rgb(23, 236, 255);
+  box-shadow: 0px 9px 13px 0px rgba(23, 236, 255, 0.26);
+  position: absolute;
+  left: 295px;
+  top: 9871px;
+  width: 164px;
+  height: 33px;
+  z-index: 792;
 }
