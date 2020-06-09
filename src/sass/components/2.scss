@@ -2,6 +2,14 @@
   padding-top: 54px;
   padding-bottom: 40px;
 
+  .title-wrp {
+    padding-left: 80px;
+
+    @include for-size(tablet) {
+      flex: 0 0 57%;
+    }
+  }
+
   &__description {
     font-size: rem(13);
     line-height: 19.5px;
@@ -81,14 +89,6 @@
       @include flexible(space-between);
       flex-wrap: wrap;
     }
-  }
-}
-
-.title-wrp {
-  padding-left: 80px;
-
-  @include for-size(tablet) {
-    flex: 0 0 57%;
   }
 }
 
