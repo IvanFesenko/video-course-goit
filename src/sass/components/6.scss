@@ -32,6 +32,9 @@
   z-index: -1;
   top: -15px;
     right: -70px;
+    @include for-size(desktop){
+      font-size: rem(156);
+    }
 }
 .warning {
   @include for-size(tablet){
