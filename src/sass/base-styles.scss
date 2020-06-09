@@ -91,8 +91,6 @@
     font-weight: 800;
     font-size: rem(30);
 
-<<<<<<< HEAD
-=======
     @include for-size(tablet) {
       width: 18px;
       top: 10px;
@@ -100,7 +98,6 @@
     }
   }
 
->>>>>>> upstream/master
   @include for-size(tablet) {
     font-size: rem(9);
   }
