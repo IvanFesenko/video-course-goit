@@ -7,3 +7,59 @@
   }
   
 }
+.career {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.career__image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.career__title {  
+  width: 310px;
+  margin: 0 auto;
+  &>.section-title {
+    text-transform: uppercase;
+    font-size: rem(18);
+    margin-bottom: 10px;
+  }
+  &>.section-description {
+    padding-left: 40px;
+    font-size: rem(13.5);
+    margin-bottom: 25px;
+    &::before {
+      left:rem(2);
+      width: rem(21);
+      @include for-size(tablet){
+        width: rem(29);
+        height: rem(4);
+      } 
+    }
+  }
+
+}
+
+.career__member {
+  margin-bottom: 20px;
+}
+.career__description {
+  &>.bullet-list{
+    padding: 0;
+  width: 305px;
+  font-size: rem(13.5);
+  margin: auto;
+  
+  }
+  &> .bullet-list .bullet-list__title {
+    padding-left: 24px;
+  }
+  &> .bullet-list .bullet-list__item {
+    &::before {
+      left: rem(0);
+      top: rem(5);
+     
+    }
+  }
+}
