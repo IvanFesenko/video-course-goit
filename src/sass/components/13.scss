@@ -1,12 +1,13 @@
 .profesion {
-  padding-top: 66px;
+  padding-top: rem(66);
 
   @include for-size (tablet) {
-    padding-top: 100px;
+    padding-top: rem(100);
   }
 
   @include for-size (desktop) {
-    padding: 60px 0px;
+    padding-top: rem(60);
+    padding-bottom: rem(60);
   }
 
   &__content {
@@ -17,30 +18,32 @@
 
 
   &__title-wrapper {
-    margin: 0px auto 26px;
-    max-width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem(26);
+    max-width: rem(232);
 
     @include for-size (tablet) {
-      max-width: 240px;
-      margin-bottom: 0px;
+      margin: rem(0);
+      max-width: rem(240);
     }
 
     @include for-size (desktop) {
-      max-width: 268px;
+      max-width: rem(268);
     }
   }
 
   &__section-title {
-    margin-bottom: 24px;
-    line-height: 24px;
+    margin-bottom: rem(24);
+    line-height: rem(24);
     text-transform: uppercase;
 
     @include for-size (tablet) {
-      line-height: 34px;
+      line-height: rem(34);
     }
 
     @include for-size (desktop) {
-      line-height: 38px;
+      line-height: rem(38);
     }
   }
 
@@ -64,51 +67,52 @@
     }
 
     &::before {
-      width: 15px;
-      height: 4px;
-      left: 0px;
+      width: rem(15);
+      height: rem(4);
+      left: rem(0);
 
       @include for-size (tablet) {
-        width: 29px;
+        width: rem(29);
       }
 
       @include for-size (desktop) {
-        width: 32px;
+        width: rem(32);
       }
     }
   }
 
   &__img-wrapper {
-    margin-bottom: 38px;
+    margin-bottom: rem(38);
 
     @include for-size (tablet) {
-      max-width: 182px;
-      margin-bottom: 0px;
+      max-width: rem(182);
+      margin-bottom: rem(0);
     }
   }
 
   &__coment-wrapper {
-    margin: 0px auto;
-    max-width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem(232);
 
     @include for-size (tablet) {
-      max-width: 138px;
+      max-width: rem(138);
     }
 
     @include for-size (desktop) {
-      max-width: 152px;
+      max-width: rem(152);
     }
   }
 
   &__coment-title {
-    margin-bottom: 14px;
+    margin-bottom: rem(14);
     font-weight: 800;
     font-size: rem(14);
     line-height: rem(20);
     text-transform: uppercase;
 
     @include for-size (tablet) {
-      padding-right: 36px;
+      padding-right: rem(36);
       font-size: rem(9);
       line-height: rem(14);
     }
@@ -126,13 +130,13 @@
     color: $text-grey-color;
 
     @include for-size (tablet) {
-      padding-right: 10px;
+      padding-right: rem(10);
       font-size: rem(8);
       line-height: rem(12);
     }
 
     @include for-size (desktop) {
-      padding-right: 5px;
+      padding-right: rem(5);
       font-size: rem(9);
       line-height: rem(13);
     }
