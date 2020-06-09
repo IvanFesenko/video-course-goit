@@ -1,6 +1,7 @@
 * {
   outline: 1px solid blue;
 }
+
 .section-seven-wrp {
   @include for-size(tablet) {
     display: flex;

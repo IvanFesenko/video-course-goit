@@ -2,32 +2,94 @@
   padding-bottom: 74px;
 }
 
+.section-eleven-bigWrp {
+  @include for-size(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 60px;
+    align-items: start;
+    margin-bottom: 66px;
+  }
+}
+
+.section-eleven-wrp {
+  @include for-size(tablet) {
+    grid-row: span 2;
+  }
+}
+
 .section-eleven-title {
   max-width: 380px;
   margin: 0 auto;
   margin-bottom: 22px;
+
+  @include for-size(tablet) {
+    margin-bottom: 22px;
+  }
 }
 
-.section-eleven-wrp__title {
-  max-width: 318px;
-  margin: 0 auto;
-  font-size: 0.875rem;
-  line-height: 1.1875rem;
-  font-weight: 800;
-  margin-bottom: 16px;
-}
+.section-eleven-wrp__box {
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+  }
 
-.section-eleven-wrp__text {
-  font-size: 0.875rem;
-  line-height: 1.1875rem;
-  max-width: 318px;
-  margin: 0 auto;
-  margin-bottom: 38px;
+  @include for-size(desktop) {
+    margin-bottom: 16px;
+  }
+
+  &-title {
+    max-width: 318px;
+    margin: 0 auto;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+
+    @include for-size(tablet) {
+      max-width: 96px;
+      font-size: 0.5625rem;
+      line-height: 0.91rem;
+      margin: 0 16px 0 0;
+    }
+
+    @include for-size(desktop) {
+      max-width: 104px;
+      font-size: rem(10);
+      line-height: rem(16.25);
+    }
+  }
+
+  &-text {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    max-width: 318px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    @include for-size(tablet) {
+      max-width: 118px;
+      font-size: 0.5rem;
+      line-height: 0.73rem;
+      margin-bottom: 26px;
+      margin: 0 0 16px 0;
+    }
+
+    @include for-size(desktop) {
+      max-width: 128px;
+      font-size: rem(8.75);
+      line-height: rem(13);
+    }
+  }
 }
 
 .banner {
   margin: 0 auto;
   margin-bottom: 62px;
+
+  @include for-size(tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .section-eleven-description {
@@ -37,55 +99,291 @@
   margin: 0 auto;
   margin-bottom: 37px;
   font-weight: 500;
+
+  @include for-size(tablet) {
+    max-width: 154px;
+    margin: 0 auto;
+    font-size: rem(9);
+    line-height: rem(13.46);
+  }
+
+  @include for-size(desktop) {
+    max-width: 182px;
+    margin: 0 auto;
+    font-size: rem(10);
+    line-height: rem(15);
+  }
 }
 
 .section-eleven-content-wrp {
   width: 300px;
   margin: 0 auto;
+
+  @include for-size(tablet) {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 172px 1fr;
+    grid-template-rows: 42px 1fr;
+    width: auto;
+    margin: 0;
+  }
 }
 
 .it-blackBg-text {
   margin-bottom: 34px;
   display: inline-block;
+
+  @include for-size(tablet) {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    font-size: 0.56rem;
+    line-height: 0.73rem;
+    margin: 0;
+  }
+
+  @include for-size(desktop) {
+    font-size: rem(10);
+    line-height: rem(13);
+  }
 }
 
-.goit-prize__title {
-  position: relative;
-  width: 174px;
-  font-size: 0.8rem;
-  line-height: 1.1875rem;
-  margin-bottom: 14px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.goit-prize__title::after {
+.it-blackBg-second-text {
+  margin-bottom: 34px;
   display: inline-block;
-  content: '';
-  background-image: url('../images/11/un.png');
-  width: 80px;
-  height: 68px;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: -122px;
-  top: -44px;
+
+  @include for-size(tablet) {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    font-size: 0.56rem;
+    line-height: 0.73rem;
+    margin: 0;
+  }
+
+  @include for-size(desktop) {
+    font-size: rem(10);
+    line-height: rem(13);
+  }
 }
 
-.goit-prize__description {
-  font-size: 0.8rem;
-  line-height: 1.1875rem;
-  margin-bottom: 40px;
+.goit-prize {
+  @include for-size(tablet) {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    margin-right: 36px;
+  }
+
+  &__title {
+    position: relative;
+    max-width: 174px;
+    font-size: 0.8rem;
+    line-height: 1.1875rem;
+    margin-bottom: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    z-index: 1;
+
+    @include for-size(tablet) {
+      font-size: 0.5625rem;
+      line-height: 0.84rem;
+      width: auto;
+    }
+
+    @include for-size(desktop) {
+      font-size: rem(10);
+      line-height: rem(15);
+    }
+  }
+
+  &__title::after {
+    display: inline-block;
+    content: '';
+    background-image: url('../images/11/un.png');
+    width: 80px;
+    height: 68px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: -122px;
+    top: -44px;
+    z-index: -1;
+
+    @include for-size(tablet) {
+      background-image: url('../images/11/un-t.png');
+      width: 58px;
+      height: 50px;
+      right: 0px;
+      top: -36px;
+    }
+
+    @include for-size(desktop) {
+      background-image: url('../images/11/un-d.png');
+      width: 64px;
+      height: 55px;
+      right: -17px;
+    }
+  }
+
+  &__description {
+    font-size: 0.8rem;
+    line-height: 1.1875rem;
+    margin-bottom: 40px;
+
+    @include for-size(tablet) {
+      margin-bottom: 0;
+      font-size: 0.49rem;
+      line-height: 0.73rem;
+    }
+
+    @include for-size(desktop) {
+      font-size: rem(8.75);
+      line-height: rem(13);
+    }
+  }
 }
 
 .prize-list {
+  @include for-size(tablet) {
+    grid-column: 2/2;
+    grid-row: 2/2;
+
+    display: flex;
+  }
+
   &__item {
+    position: relative;
+
+    @include for-size(tablet) {
+      max-width: 86px;
+    }
+
+    &::before {
+      font-size: 2.41rem;
+      font-weight: bold;
+      color: #f2f2f2;
+      position: absolute;
+      transform: rotate(270deg);
+      right: -64px;
+      top: 0px;
+      z-index: -1;
+
+      @include for-size(tablet) {
+        font-size: 1.75rem;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background-repeat: no-repeat;
+      top: 0;
+    }
+
+    &:nth-child(1)::before {
+      content: '01_';
+    }
+
+    &:nth-child(1)::after {
+      background-image: url('../images/11/prize1.png');
+      width: 41px;
+      height: 136px;
+      right: -44px;
+
+      @include for-size(tablet) {
+        background-image: url('../images/11/prize1-t.png');
+        width: 29px;
+        height: 98px;
+        right: -44px;
+      }
+
+      @include for-size(desktop) {
+        background-image: url('../images/11/prize1-d.png');
+        width: 32px;
+        height: 109px;
+      }
+    }
+
+    &:nth-child(2)::before {
+      content: '02_';
+
+      @include for-size(tablet) {
+        right: -73px;
+      }
+    }
+
+    &:nth-child(2)::after {
+      background-image: url('../images/11/prize2.png');
+      width: 54px;
+      height: 109px;
+      right: -52px;
+
+      @include for-size(tablet) {
+        background-image: url('../images/11/prize2-t.png');
+        width: 40px;
+        height: 79px;
+        right: -44px;
+      }
+
+      @include for-size(desktop) {
+        background-image: url('../images/11/prize2-d.png');
+        width: 45px;
+        height: 88px;
+        right: -46px;
+      }
+    }
+
+    &:nth-child(3)::before {
+      content: '03_';
+
+      @include for-size(tablet) {
+        right: -73px;
+      }
+    }
+
+    &:nth-child(3)::after {
+      background-image: url('../images/11/prize2.png');
+      width: 54px;
+      height: 109px;
+      right: -52px;
+
+      @include for-size(tablet) {
+        background-image: url('../images/11/prize2-t.png');
+        width: 40px;
+        height: 79px;
+        right: -44px;
+      }
+
+      @include for-size(desktop) {
+        background-image: url('../images/11/prize2-d.png');
+        width: 45px;
+        height: 88px;
+        right: -46px;
+      }
+    }
+
     &:not(:last-child) {
       margin-bottom: 40px;
+
+      @include for-size(tablet) {
+        margin-bottom: 0;
+        margin-right: 80px;
+      }
     }
 
     &-title {
       margin-bottom: 10px;
       text-transform: uppercase;
+
+      @include for-size(tablet) {
+        font-size: 0.5625rem;
+        line-height: 0.84rem;
+        width: auto;
+      }
+
+      @include for-size(desktop) {
+        font-size: rem(10);
+        line-height: rem(15);
+      }
 
       &_year {
         display: block;
@@ -94,6 +392,20 @@
 
     &-subtitle {
       margin-bottom: 6px;
+      font-size: 0.49rem;
+      line-height: 0.73rem;
+    }
+
+    &-text {
+      @include for-size(tablet) {
+        font-size: 0.49rem;
+        line-height: 0.73rem;
+      }
+
+      @include for-size(desktop) {
+        font-size: rem(8.75);
+        line-height: rem(13);
+      }
     }
   }
 }
