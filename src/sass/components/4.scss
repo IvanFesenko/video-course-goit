@@ -26,7 +26,7 @@
     min-width: 274px;
   }
   @include for-size(desktop){
-    min-width: 305px;
+    min-width: 350px;
   }
   &-title {
     display: flex;
@@ -59,12 +59,16 @@
     }
     @include for-size(desktop){
       font-size: rem(8.75);
+      min-width: 185px;
     }
   }
   &-item {
     @include for-size(tablet){
       display: flex;
       justify-content: space-between;
+    }
+    @include for-size(desktop){
+      padding-right: 40px;
     }
   }
   
@@ -118,6 +122,9 @@
   @include for-size(tablet){
     width: 310px;
   }
+  @include for-size(desktop){
+    width: 350px;
+  } 
   &>.section-title {
   text-transform: uppercase;
   background-clip: border-box;
@@ -126,13 +133,11 @@
   
   margin-bottom: rem(18);
   @include for-size(tablet){
-    width: 250px;
+    width: 265px;
     text-align: left; 
     line-height: rem(36);
   } 
-  @include for-size(desktop){
-    width: 265px;
-  }  
+   
   }
 
   &>.section-description {
@@ -180,11 +185,8 @@ mark {
     padding-left: rem(30);
     padding-right: 0;
     margin-left: 0;
-    // width: 250px;
   } 
-  @include for-size(desktop){
-    // margin-left: 100px;
-  } 
+   
   &__item {
     position: relative;
     &::before {
