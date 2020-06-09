@@ -1,0 +1,125 @@
+.motivation {
+  padding-top: 54px;
+  padding-bottom: 40px;
+
+  &__description {
+    font-size: rem(13);
+    line-height: 19.5px;
+    color: $black-color;
+    font-weight: 500;
+    margin-bottom: 23px;
+    letter-spacing: 0.6px;
+
+    &--mobile {
+      @include for-size(tablet) {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+      @include for-size(tablet) {
+        display: block;
+      }
+    }
+  }
+
+  &-title-wrp {
+    @include for-size(tablet) {
+      @include flexible;
+    }
+  }
+
+  &-img-wrp {
+    margin-bottom: 45px;
+  }
+
+  &__list-title {
+    font-size: rem(13);
+    font-weight: 800;
+    line-height: 19.5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__list {
+    padding-left: 38px;
+    padding-right: 20px;
+    margin-bottom: 38px;
+
+    &-item {
+      margin-bottom: 17px;
+      position: relative;
+
+      &::before {
+        @include pseudo(8px, 8px);
+        position: absolute;
+        top: 7px;
+        left: -16px;
+        background-color: $black-color;
+        @include for-size(tablet) {
+          visibility: hidden;
+        }
+      }
+
+      @include for-size(tablet) {
+        flex: 0 0 25%;
+      }
+    }
+
+    &-item-text {
+      font-size: rem(13);
+      line-height: 19.5px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+
+      &--strong {
+        font-weight: 700;
+      }
+    }
+
+    @include for-size(tablet) {
+      @include flexible(space-between);
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.title-wrp {
+  padding-left: 80px;
+
+  @include for-size(tablet) {
+    flex: 0 0 57%;
+  }
+}
+
+.facts__description {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: rem(15);
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.facts__title {
+  font-size: rem(20);
+  .black-bg {
+    display: block;
+    max-width: 260px;
+  }
+}
+
+.let-start {
+  @include flexible;
+
+  &-text {
+    color: $orange-color;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 19.5px;
+    max-width: 300px;
+  }
+
+  @include for-size(tablet) {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,144 @@
+.facts {
+  padding-top: 38px;
+  padding-bottom: 65px;
+
+  .title-wrp {
+    padding: 0 88px 0 113px;
+    margin-bottom: 44px;
+
+    @include for-size(tablet) {
+      padding: 0;
+      margin-bottom: 0;
+      flex: 0 0 33%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 42px;
+    text-transform: uppercase;
+    @include for-size(tablet) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__description {
+    @include for-size(tablet) {
+      margin-left: 38px;
+    }
+    @include for-size(desktop) {
+      line-height: 15px;
+      padding-right: 50px;
+    }
+  }
+
+  &__list {
+    padding: 0 20px 0 25px;
+
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    &-item {
+      margin-bottom: 28px;
+      @include for-size(tablet) {
+        max-width: 150px;
+      }
+
+      @include for-size(desktop) {
+        max-width: 166px;
+      }
+
+      &--order-one {
+        @include for-size(tablet) {
+          order: 1;
+          margin-bottom: 13px;
+        }
+      }
+      &--order-two {
+        @include for-size(tablet) {
+          order: 2;
+          margin-bottom: 13px;
+        }
+      }
+      &--order-three {
+        @include for-size(tablet) {
+          order: 3;
+          margin-bottom: 0;
+        }
+      }
+      &--order-four {
+        @include for-size(tablet) {
+          order: 4;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &-item-title {
+      margin-bottom: 6px;
+      font-weight: 800;
+      font-size: rem(23);
+      text-transform: uppercase;
+      padding-left: 16px;
+      position: relative;
+
+      @include for-size(tablet) {
+        font-size: rem(17);
+      }
+
+      &--span {
+        font-size: rem(13);
+        @include for-size(tablet) {
+          font-size: rem(9);
+        }
+      }
+      &::before {
+        @include pseudo(10px, 10px);
+        position: absolute;
+        top: 9px;
+        left: -5px;
+        background-color: $orange-color;
+        @include for-size(tablet) {
+          visibility: hidden;
+        }
+      }
+    }
+
+    &-item-description {
+      font-weight: 500;
+      font-size: rem(14);
+      display: inline-block;
+      margin-left: 16px;
+      @include for-size(tablet) {
+        font-size: rem(8);
+      }
+    }
+
+    &-item-comment {
+      margin-top: 14px;
+      font-weight: 400;
+      font-size: rem(14);
+      line-height: 19.5px;
+      padding-left: 16px;
+      color: #3f4144;
+      @include for-size(tablet) {
+        font-size: rem(8);
+        line-height: 11.78px;
+      }
+      @include for-size(desktop) {
+        font-size: rem(9);
+        line-height: 13.13px;
+      }
+    }
+  }
+
+  @include for-size(tablet) {
+    .container {
+      display: flex;
+      background-image: url(../images/3/bg.png);
+      @include background-settings(no-repeat, bottom right, inherit);
+    }
+  }
+}
