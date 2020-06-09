@@ -1,0 +1,99 @@
+.section-eleven {
+  padding-bottom: 74px;
+}
+
+.section-eleven-title {
+  max-width: 380px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.section-eleven-wrp__title {
+  max-width: 318px;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.section-eleven-wrp__text {
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  max-width: 318px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+.banner {
+  margin: 0 auto;
+  margin-bottom: 62px;
+}
+
+.section-eleven-description {
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  max-width: 292px;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  font-weight: 500;
+}
+
+.section-eleven-content-wrp {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.it-blackBg-text {
+  margin-bottom: 34px;
+  display: inline-block;
+}
+
+.goit-prize__title {
+  position: relative;
+  width: 174px;
+  font-size: 0.8rem;
+  line-height: 1.1875rem;
+  margin-bottom: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.goit-prize__title::after {
+  display: inline-block;
+  content: '';
+  background-image: url('../images/11/un.png');
+  width: 80px;
+  height: 68px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -122px;
+  top: -44px;
+}
+
+.goit-prize__description {
+  font-size: 0.8rem;
+  line-height: 1.1875rem;
+  margin-bottom: 40px;
+}
+
+.prize-list {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    &-title {
+      margin-bottom: 10px;
+      text-transform: uppercase;
+
+      &_year {
+        display: block;
+      }
+    }
+
+    &-subtitle {
+      margin-bottom: 6px;
+    }
+  }
+}
