@@ -70,8 +70,8 @@
     @include for-size(tablet) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      max-width: rem(300);
+      //   justify-content: space-between;
+      max-width: rem(320);
     }
   }
 
@@ -109,6 +109,10 @@
     @include for-size(tablet) {
       &:not(:nth-last-child(-n + 2)) {
         margin-bottom: rem(10);
+      }
+
+      &:not(:nth-child(2n)) {
+        margin-right: rem(10);
       }
     }
   }
