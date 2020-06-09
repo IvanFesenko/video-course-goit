@@ -31,6 +31,10 @@
       margin-bottom: rem(22);
       line-height: rem(36);
     }
+
+    @include for-size(desktop) {
+      line-height: rem(40);
+    }
   }
 
   &__description {
