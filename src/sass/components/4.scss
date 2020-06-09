@@ -1,3 +1,12 @@
+.container {
+  @include for-size(tablet){
+    min-width: 670px;
+  }
+  @include for-size(desktop){
+    min-width: 740px;
+  }
+  
+}
 .section-four {
   padding-top: rem(3);
   padding-bottom: rem(40);
@@ -44,7 +53,7 @@
     margin-bottom: rem(46);
     @include for-size(tablet){
       max-width: 170px;
-      font-size: rem(9);
+      font-size: rem(7.85);
       line-height: rem(12);
       margin-bottom: 0;
     }
@@ -107,7 +116,7 @@
 
 .future__text{
   @include for-size(tablet){
-    // padding-right: 50px;
+    width: 310px;
   }
   &>.section-title {
   text-transform: uppercase;
@@ -115,8 +124,6 @@
   color: $white-color;
   text-align: center;
   
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: rem(18);
   @include for-size(tablet){
     width: 250px;
@@ -144,14 +151,14 @@
       } 
     }
     @include for-size(tablet){
-      margin-left: rem(60);
-      padding-left: rem(38);
+      margin-left: 0;
+      padding-left: rem(44);
       max-width: 200px;
       font-size: rem(9);
       line-height: rem(13);
     } 
     @include for-size(desktop){
-      margin-left: rem(70);
+      // margin-left: rem(70);
     }  
   
   }
@@ -170,12 +177,13 @@ mark {
   padding-left: rem(40);
   padding-right: rem(35);
   @include for-size(tablet){
-    padding-left: 0;
-    padding-right: rem(75);
-    margin-left: rem(90);
+    padding-left: rem(30);
+    padding-right: 0;
+    margin-left: 0;
+    // width: 250px;
   } 
   @include for-size(desktop){
-    margin-left: 100px;
+    // margin-left: 100px;
   } 
   &__item {
     position: relative;
