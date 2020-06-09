@@ -1,48 +1,170 @@
-.ordered {
-  &__title--bg {
-    background-color: $black-color;
-    color: $white-color;
+.ninth {
+  position: relative;
+  padding-top: rem(8);
+  padding-bottom: rem(30);
+
+  @include for-size(tablet) {
+    padding-top: rem(44);
+    padding-bottom: rem(40);
   }
 
-  &-list {
-    list-style: none;
-    counter-reset: lcounter;
+  &-container {
+    position: relative;
 
-    &__item {
-      position: relative;
-      font-size: rem(13.5);
+    @include for-size(tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
-      &::before {
-        content: counter(lcounter, decimal-leading-zero) '.';
-        counter-increment: lcounter;
-        color: $black-color;
-        display: inline-block;
-        left: -40px;
-        position: absolute;
-        text-align: center;
-        top: 0;
-        font-weight: 700;
-        font-size: rem(24.54);
-      }
-
-      &::after {
-        display: inline-block;
-        position: absolute;
-        content: '';
-        background-color: $blue-color;
-        width: 10px;
-        height: 10px;
-        top: 26px;
-        left: -20px;
-        transform: translateX(-50%);
-      }
+  &__title {
+    @include for-size(mobile) {
+      margin: 0 auto;
+      width: rem(200);
+      margin-bottom: rem(18);
+      line-height: rem(24);
     }
 
-    &__title {
-      text-transform: uppercase;
+    @include for-size(tablet) {
+      max-width: rem(220);
+      margin-bottom: rem(22);
+      line-height: rem(36);
     }
-    // &__text {
-    //   font-size: rem(13.5);
-    // }
+
+    @include for-size(desktop) {
+      //   max-width: rem(220);
+    }
+  }
+
+  &__description {
+    max-width: rem(280);
+    font-weight: 500;
+
+    @include for-size(mobile) {
+      margin: 0 auto;
+      margin-bottom: rem(56);
+    }
+    @include for-size(tablet) {
+      max-width: rem(130);
+      margin: 0 auto;
+    }
+  }
+
+  &__title-wrapper {
+    @include for-size(tablet) {
+      max-width: rem(200);
+    }
+  }
+}
+
+.ordered {
+  &__list {
+    counter-reset: l-counter;
+    margin: 0 auto;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    max-width: rem(340);
+    margin: 0 auto;
+    padding-bottom: 10px;
+
+    &::after {
+      display: inline-block;
+      position: absolute;
+      content: '';
+      background-color: $blue-color;
+      width: rem(10);
+      height: rem(10);
+      top: rem(28);
+      left: rem(26);
+      transform: translateX(-50%);
+    }
+
+    @include for-size(mobile) {
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    max-width: rem(240);
+    margin: 0 auto;
+
+    &::before {
+      content: counter(l-counter, decimal-leading-zero) '.';
+      counter-increment: l-counter;
+      color: $black-color;
+      display: block;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      left: rem(-60);
+      font-weight: 700;
+      font-size: rem(24.54);
+
+      @include for-size(tablet) {
+        font-size: rem(16.82);
+      }
+
+      @include for-size(desktop) {
+        font-size: rem(10);
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(13.5);
+    line-height: rem(19.5);
+    text-transform: uppercase;
+    font-weight: 900;
+
+    @include for-size(tablet) {
+      font-size: rem(7.85);
+      line-height: rem(11.78);
+    }
+
+    @include for-size(desktop) {
+      font-size: rem(8.75);
+      line-height: rem(11.25);
+    }
+  }
+
+  &_text {
+    font-size: rem(13.5);
+    font-weight: 400;
+  }
+}
+
+.bg-ninth {
+  position: absolute;
+  font-weight: 800;
+  color: $black-color;
+  opacity: 0.05;
+  outline: 1px solid red;
+  z-index: -1;
+  top: rem(-50);
+
+  @include for-size(tablet) {
+    top: rem(-70);
+    left: rem(100);
+  }
+
+  &__numb {
+    position: absolute;
+    top: 0;
+    font-size: rem(299);
+  }
+
+  &__text {
+    position: absolute;
+    font-size: rem(82);
+    transform: rotateZ(90deg);
+    top: rem(127);
+    left: rem(84);
+    text-transform: uppercase;
   }
 }
