@@ -2,7 +2,7 @@
   padding-top: 20px;
   padding-bottom: 40px;
   @include for-size(tablet){
-      max-height: 470px;
+      height: 470px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -12,14 +12,13 @@
 }
 
 .career__image {
-  display: flex;
-  justify-content: center;
+  @include flexible(center);
   margin-bottom: 20px;
   @include for-size(tablet){
      width: 314px;
      order: 1;
      margin-bottom: 35px;
-     justify-content: start;
+     @include flexible(start);
   } 
 }
 
@@ -32,30 +31,30 @@
     order: 3;
   } 
   @include for-size(desktop){
-    width: 50%;
+    width: 348px;
   } 
   &>.section-title {
     text-transform: uppercase;
     font-size: rem(18);
-    margin-bottom: 10px;
+    margin-bottom: rem(10);
     @include for-size(tablet){
       font-size: rem(27);
-      margin-top: 15px;
+      margin-top: rem(15);
     } 
     @include for-size(desktop){
-      margin-top: 25px;
-      font-size: 30px;
+      margin-top: rem(25);
+      font-size: rem(30);
     } 
   }
   &>.section-description {
-    padding-left: 40px;
+    padding-left: rem(40);
     font-size: rem(13.5);
-    margin-bottom: 25px;
+    margin-bottom: rem(25);
     @include for-size(tablet){
       font-size: rem(9);
       width: 235px;
-      padding-left: 47px;
-      margin-bottom: 40px;
+      padding-left: rem(47);
+      margin-bottom: rem(40);
     } 
     @include for-size(desktop){
       font-size: rem(10);
@@ -71,11 +70,10 @@
       } 
     }
   }
-
 }
 
 .career__member {
-  margin-bottom: 20px;
+  margin-bottom: rem(20);
   @include for-size(tablet){
     width: 314px;
     order: 4;
@@ -134,10 +132,7 @@
     }
   }
   &> .bullet-list .bullet-list__item {
-    @include for-size(tablet){
-      width: auto;
-   }
-   @include for-size(desktop){
+    @include for-size(desktop){
     width: 220px;
  }
     
