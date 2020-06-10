@@ -1,13 +1,3 @@
-.container {
-  @include for-size(tablet){
-    min-width: 670px;
-  }
-  @include for-size(desktop){
-    min-width: 740px;
-  }
-  
-}
-
 .expert {
   padding-top: 20px;
   padding-bottom: 40px;
