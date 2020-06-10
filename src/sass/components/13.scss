@@ -1,0 +1,144 @@
+.profesion {
+  padding-top: rem(66);
+
+  @include for-size (tablet) {
+    padding-top: rem(100);
+  }
+
+  @include for-size (desktop) {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+  }
+
+  &__content {
+    @include for-size (tablet) {
+      @include flexible (space-between)
+    }
+  }
+
+
+  &__title-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem(26);
+    max-width: rem(232);
+
+    @include for-size (tablet) {
+      margin: rem(0);
+      max-width: rem(240);
+    }
+
+    @include for-size (desktop) {
+      max-width: rem(268);
+    }
+  }
+
+  &__section-title {
+    margin-bottom: rem(24);
+    line-height: rem(24);
+    text-transform: uppercase;
+
+    @include for-size (tablet) {
+      line-height: rem(34);
+    }
+
+    @include for-size (desktop) {
+      line-height: rem(38);
+    }
+  }
+
+  &__section-description {
+    padding-left: rem(26);
+    letter-spacing: rem(-0.315);
+    line-height: rem(20);
+
+    @include for-size (tablet) {
+      padding-left: rem(46);
+      padding-right: rem(56);
+      line-height: rem(14);
+      letter-spacing: rem(0);
+    }
+
+    @include for-size (desktop) {
+      padding-left: rem(52);
+      padding-right: rem(62) ;
+      line-height: rem(15);
+      letter-spacing: rem(0);
+    }
+
+    &::before {
+      width: rem(15);
+      height: rem(4);
+      left: rem(0);
+
+      @include for-size (tablet) {
+        width: rem(29);
+      }
+
+      @include for-size (desktop) {
+        width: rem(32);
+      }
+    }
+  }
+
+  &__img-wrapper {
+    margin-bottom: rem(38);
+
+    @include for-size (tablet) {
+      max-width: rem(182);
+      margin-bottom: rem(0);
+    }
+  }
+
+  &__coment-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem(232);
+
+    @include for-size (tablet) {
+      max-width: rem(138);
+    }
+
+    @include for-size (desktop) {
+      max-width: rem(152);
+    }
+  }
+
+  &__coment-title {
+    margin-bottom: rem(14);
+    font-weight: 800;
+    font-size: rem(14);
+    line-height: rem(20);
+    text-transform: uppercase;
+
+    @include for-size (tablet) {
+      padding-right: rem(36);
+      font-size: rem(9);
+      line-height: rem(14);
+    }
+
+    @include for-size (desktop) {
+      font-size: rem(10);
+      line-height: rem(16.5);
+    }
+  }
+
+  &__coment-description {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $text-grey-color;
+
+    @include for-size (tablet) {
+      padding-right: rem(10);
+      font-size: rem(8);
+      line-height: rem(12);
+    }
+
+    @include for-size (desktop) {
+      padding-right: rem(5);
+      font-size: rem(9);
+      line-height: rem(13);
+    }
+  }
+}
