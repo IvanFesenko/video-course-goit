@@ -276,3 +276,68 @@
     }
   }
 }
+
+@keyframes slide {
+  from {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.burger {
+  display: block;
+  position: absolute;
+  width: rem(30);
+  height: rem(3);
+  top: rem(13);
+  right: 0;
+  background-color: $white-color;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: rem(10);
+    right: 0;
+    width: rem(30);
+    height: rem(3);
+    background-color: $white-color;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: rem(-10);
+    right: 0;
+    width: rem(30);
+    height: rem(3);
+    background-color: $white-color;
+  }
+}
+
+.burger__container {
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  width: rem(30);
+  height: rem(30);
+  background-color: rgba(255, 255, 255, 0);
+
+  &:hover .burger {
+    animation: slide 0.5s infinite ease-out;
+  }
+
+  &:hover .burger::before {
+    animation: slide 0.6s infinite ease-out;
+  }
+
+  &:hover .burger::after {
+    animation: slide 0.7s infinite ease-out;
+  }
+}
