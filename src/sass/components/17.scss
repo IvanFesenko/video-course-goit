@@ -156,8 +156,9 @@
 
   &__button {
     border: none;
-    padding-top: rem(2);
+    padding-top: rem(1);
     margin-left: 0;
+    cursor: pointer;
 
     @include for-size(tablet) {
       width: rem(148);
