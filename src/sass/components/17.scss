@@ -1,0 +1,173 @@
+.seventeenth-container {
+  padding-top: rem(34);
+  padding-bottom: rem(44);
+
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include for-size(tablet) {
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+  }
+  @include for-size(desktop) {
+    padding-top: rem(60);
+    padding-bottom: rem(62);
+  }
+}
+
+.seventeenth-title {
+  margin-right: 0;
+  text-align: center;
+
+  &--mark {
+    background-color: $black-color;
+    color: $white-color;
+  }
+
+  @include for-size(mobile) {
+    margin-bottom: rem(20);
+  }
+
+  @include for-size(tablet) {
+    margin-bottom: rem(18);
+    line-height: rem(36.65);
+    max-width: rem(244);
+    text-align: left;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: rem(20);
+    line-height: rem(38);
+    max-width: rem(270);
+  }
+}
+
+.seventeenth-description {
+  max-width: rem(220);
+  margin: 0 auto;
+  line-height: rem(19.5);
+  text-align: left;
+
+  @include for-size(mobile) {
+    margin-bottom: rem(58);
+  }
+
+  @include for-size(tablet) {
+    margin-bottom: rem(34);
+    max-width: rem(144);
+    margin-left: rem(38);
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: rem(36);
+  }
+}
+
+.ordered {
+  &__list-seventeenth {
+    @include for-size(tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__wrap-seventeenth {
+    @include for-size(tablet) {
+      max-width: rem(200);
+    }
+
+    @include for-size(desktop) {
+      max-width: rem(220);
+    }
+  }
+
+  &__span {
+    background-color: $black-color;
+    color: $white-color;
+  }
+}
+
+.video {
+  &__form {
+    max-width: rem(372);
+    margin: 0 auto;
+    padding: rem(66);
+    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+
+    @include for-size(tablet) {
+      padding-top: rem(54);
+      padding-right: rem(54);
+      padding-bottom: rem(70);
+      padding-left: rem(54);
+      margin: 0;
+    }
+  }
+
+  &__input {
+    all: unset;
+    display: block;
+    width: rem(240);
+    border-bottom: 1px solid #bfbfbf;
+    &:not(:last-of-type) {
+      margin-bottom: rem(18);
+    }
+
+    &:last-of-type {
+      margin-bottom: rem(34);
+
+      @include for-size(tablet) {
+        margin-bottom: rem(30);
+      }
+
+      @include for-size(desktop) {
+        margin-bottom: rem(32);
+      }
+    }
+
+    &::placeholder {
+      color: $black-color;
+      font-size: rem(9.29);
+    }
+
+    &:invalid:not(:placeholder-shown) {
+      border-color: #ff0000;
+    }
+
+    &:valid {
+      border-color: #09ff00;
+    }
+
+    @include for-size(tablet) {
+      max-width: rem(204);
+    }
+
+    @include for-size(desktop) {
+      max-width: rem(226);
+    }
+  }
+
+  &__label {
+    color: #bfbfbf;
+    font-size: rem(7.97);
+    font-weight: 700;
+  }
+
+  &__button {
+    border: none;
+    padding-top: rem(2);
+    margin-left: 0;
+
+    @include for-size(tablet) {
+      width: rem(148);
+      height: rem(28);
+    }
+
+    @include for-size(desktop) {
+      width: rem(162);
+      height: rem(32);
+      font-size: rem(7.5);
+    }
+  }
+}

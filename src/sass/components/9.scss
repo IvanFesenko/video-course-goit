@@ -70,7 +70,6 @@
     @include for-size(tablet) {
       display: flex;
       flex-wrap: wrap;
-      //   justify-content: space-between;
       max-width: rem(320);
     }
   }
@@ -114,6 +113,7 @@
       &:not(:nth-child(2n)) {
         margin-right: rem(10);
       }
+      margin-left: 0;
     }
   }
 
@@ -174,6 +174,7 @@
   &__text {
     font-size: rem(13.5);
     font-weight: 400;
+    line-height: rem(17.65);
 
     @include for-size(tablet) {
       font-size: rem(7.85);
