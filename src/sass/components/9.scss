@@ -232,7 +232,15 @@
   }
 
   &__section-comment {
-    max-width: rem(320);
     margin-left: rem(40);
+
+    @include for-size(mobile) {
+      max-width: rem(320);
+      margin: 0 auto;
+    }
+
+    @include for-size(tablet) {
+      max-width: rem(300);
+    }
   }
 }
