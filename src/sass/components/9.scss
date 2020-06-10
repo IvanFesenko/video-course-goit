@@ -78,6 +78,7 @@
     position: relative;
     overflow: hidden;
     margin: 0 auto;
+    padding-bottom: 10px;
 
     &::after {
       display: inline-block;
@@ -86,7 +87,7 @@
       background-color: $blue-color;
       width: rem(10);
       height: rem(10);
-      top: rem(27);
+      top: rem(28);
       left: rem(22);
       transform: translateX(-50%);
 
@@ -98,16 +99,15 @@
 
     @include for-size(mobile) {
       max-width: rem(340);
-      // padding-bottom: 10px;
 
       &:not(:last-child) {
-        margin-bottom: rem(30);
+        margin-bottom: rem(20);
       }
     }
 
     @include for-size(tablet) {
       &:not(:nth-last-child(-n + 2)) {
-        margin-bottom: rem(20);
+        margin-bottom: rem(10);
       }
 
       &:not(:nth-child(2n)) {
@@ -232,15 +232,7 @@
   }
 
   &__section-comment {
+    max-width: rem(320);
     margin-left: rem(40);
-
-    @include for-size(mobile) {
-      max-width: rem(320);
-      margin: 0 auto;
-    }
-
-    @include for-size(tablet) {
-      max-width: rem(300);
-    }
   }
 }
