@@ -1,0 +1,305 @@
+.container-center {
+  align-items: center;
+
+  @include for-size(tablet) {
+    @include flexible(space-between);
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: rem(624);
+  }
+  @include for-size(desktop) {
+    max-width: rem(680);
+  }
+}
+.container-horizontal {
+  @include flexible();
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  @include flexible(start);
+  flex-wrap: wrap;
+  background-color: rgb(5, 33, 57);
+  box-shadow: 0px 14px 27px 0px rgba(0, 0, 0, 0.15);
+  line-height: 1.5;
+  max-width: 370px;
+  padding: 76px 0 69px;
+  margin: 0 auto;
+
+  @include for-size(tablet) {
+    width: 258px;
+    padding: 52px 0 49px;
+    margin: 0;
+  }
+  @include for-size(desktop) {
+    width: 286px;
+    padding: 58px 0 55px;
+  }
+  &__container {
+    width: 213px;
+    margin: 0 auto;
+
+    @include for-size(tablet) {
+      width: rem(146);
+    }
+    @include for-size(desktop) {
+      width: 164px;
+    }
+    &-horizontal {
+      margin-bottom: rem(15);
+
+      @include for-size(tablet) {
+        margin-bottom: rem(10);
+      }
+      @include for-size(desktop) {
+        margin-bottom: rem(12);
+      }
+    }
+  }
+
+  &__description {
+    font-size: rem(13);
+    color: $white-color;
+    max-width: 90px;
+
+    @include for-size(tablet) {
+      font-size: rem(9);
+      max-width: 60px;
+    }
+    @include for-size(desktop) {
+      font-size: rem(10);
+      max-width: 70px;
+    }
+
+    &-mark {
+      background-color: $blue-color;
+      line-height: 1.5;
+
+      @include for-size(tablet) {
+        font-size: rem(9);
+        font-weight: 300;
+        line-height: 1.5;
+      }
+      @include for-size(tablet) {
+        font-size: rem(10);
+        font-weight: 300;
+        line-height: 1.5;
+      }
+    }
+    &-actuale {
+      font-size: rem(13);
+      font-weight: 300;
+      line-height: 1.15;
+      max-width: rem(70);
+    }
+  }
+  &__number {
+    position: relative;
+    font-size: rem(16);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+    color: $white-color;
+
+    @include for-size(tablet) {
+      font-size: rem(12);
+      font-weight: 800;
+    }
+
+    &::before {
+      @include pseudo(36px, 1px);
+      position: absolute;
+      left: -43px;
+      top: 12px;
+      background-color: $text-grey-color;
+
+      @include for-size(tablet) {
+        @include pseudo(26px, 2px);
+        left: -30px;
+        top: 9px;
+        background-color: rgb(63, 65, 68);
+      }
+      @include for-size(desktop) {
+        @include pseudo(28px, 2px);
+        left: -35px;
+        top: 9px;
+        background-color: rgb(63, 65, 68);
+      }
+    }
+    &_actuale {
+      font-size: rem(40);
+      font-weight: 900;
+      color: $white-color;
+
+      @include for-size(tablet) {
+        font-size: rem(27);
+      }
+      @include for-size(desktop) {
+        font-size: rem(30);
+      }
+
+      &-span {
+        font-size: rem(14);
+        text-transform: uppercase;
+
+        @include for-size(tablet) {
+          font-size: rem(9);
+        }
+        @include for-size(desktop) {
+          font-size: rem(9.5);
+        }
+      }
+    }
+  }
+}
+.importantly {
+  padding: 15px 0 65px;
+  border-top: 1px solid rgb(249, 249, 249);
+
+  @include for-size(tablet) {
+    border-top: none;
+    padding: 35px 0 65px;
+  }
+
+  &__description {
+    font-weight: bold;
+    font-size: rem(14.5);
+    line-height: 1.3;
+    margin-bottom: rem(11);
+
+    @include for-size(tablet) {
+      font-size: rem(9);
+      line-height: 1.35;
+      margin-bottom: rem(6);
+    }
+    @include for-size(desktop) {
+      font-size: rem(10);
+    }
+
+    &-wrapper {
+      @include for-size(tablet) {
+        padding-left: rem(19);
+        width: rem(210);
+      }
+      @include for-size(desktop) {
+        padding-left: rem(19);
+        width: rem(225);
+      }
+    }
+
+    &-second {
+      font-weight: 400;
+      font-size: rem(13);
+      line-height: 1.4;
+      letter-spacing: -0.2px;
+      max-width: rem(280);
+      margin-bottom: rem(20);
+
+      @include for-size(tablet) {
+        font-size: rem(8);
+        width: rem(170);
+        line-height: 1.45;
+        letter-spacing: -0.1px;
+        margin-bottom: rem(11);
+      }
+      @include for-size(desktop) {
+        font-size: rem(9);
+        margin-bottom: rem(13);
+      }
+    }
+  }
+  &__section-title {
+    text-align: center;
+    margin-bottom: rem(20);
+
+    &::before,
+    &::after {
+      font-weight: 700;
+    }
+
+    &::before {
+      content: '[ ';
+    }
+    &::after {
+      content: ' ]';
+    }
+
+    &_mobile {
+      @include for-size(tablet) {
+        display: none;
+      }
+    }
+    &_tablet {
+      display: none;
+      letter-spacing: -0.5px;
+      margin-bottom: rem(27);
+
+      @include for-size(tablet) {
+        display: block;
+        text-align: left;
+        font-size: rem(28);
+      }
+      @include for-size(desktop) {
+        font-size: rem(31.5);
+        margin-bottom: rem(33);
+      }
+    }
+  }
+  &__wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+
+    @include for-size(tablet) {
+      margin: 0;
+      max-width: rem(262);
+    }
+  }
+  &__price {
+    margin-bottom: rem(37);
+
+    @include for-size(tablet) {
+      margin: 0;
+    }
+  }
+  &__section-comment {
+    font-size: rem(15);
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    margin-bottom: rem(27);
+
+    @include for-size(tablet) {
+      font-size: rem(9.5);
+      letter-spacing: -0.3px;
+      width: rem(150);
+      margin-bottom: rem(19);
+    }
+    @include for-size(desktop) {
+      font-size: rem(10.5);
+      width: rem(170);
+      margin-bottom: rem(21);
+    }
+  }
+  &__btn {
+    height: 40px;
+    font-size: rem(9.5);
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    padding: 0 42px;
+    box-shadow: 0px 9px 13px 0px rgba(196, 87, 15, 0.26);
+    border: none;
+    text-transform: uppercase;
+
+    @include for-size(tablet) {
+      font-size: rem(6);
+      height: 27px;
+      padding: 0 29px;
+    }
+
+    @include for-size(desktop) {
+      font-size: rem(7.5);
+      letter-spacing: 0.8px;
+      height: 30px;
+      padding: 0 31px;
+    }
+  }
+}
