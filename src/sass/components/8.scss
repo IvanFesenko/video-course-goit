@@ -1,0 +1,141 @@
+.career {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  @include for-size(tablet){
+      height: 470px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+      padding-top: 40px;
+    } 
+}
+
+.career__image {
+  @include flexible(center);
+  margin-bottom: 20px;
+  @include for-size(tablet){
+     width: 314px;
+     order: 1;
+     margin-bottom: 35px;
+     @include flexible(start);
+  } 
+}
+
+.career__title {  
+  width: 310px;
+  margin: auto;
+  @include for-size(tablet){
+    width: 314px;
+    margin: 0;
+    order: 3;
+  } 
+  @include for-size(desktop){
+    width: 348px;
+  } 
+  &>.section-title {
+    text-transform: uppercase;
+    font-size: rem(18);
+    margin-bottom: rem(10);
+    @include for-size(tablet){
+      font-size: rem(27);
+      margin-top: rem(15);
+    } 
+    @include for-size(desktop){
+      margin-top: rem(25);
+      font-size: rem(30);
+    } 
+  }
+  &>.section-description {
+    padding-left: rem(40);
+    font-size: rem(13.5);
+    margin-bottom: rem(25);
+    @include for-size(tablet){
+      font-size: rem(9);
+      width: 235px;
+      padding-left: rem(47);
+      margin-bottom: rem(40);
+    } 
+    @include for-size(desktop){
+      font-size: rem(10);
+      width: 250px;
+    } 
+    &::before {
+      left:rem(2);
+      width: rem(21);
+      @include for-size(tablet){
+        width: rem(29);
+        height: rem(4);
+        top: 3px;
+      } 
+    }
+  }
+}
+
+.career__member {
+  margin-bottom: rem(20);
+  @include for-size(tablet){
+    width: 314px;
+    order: 4;
+    margin-bottom: 0;
+ } 
+ @include for-size(tablet){
+    width: 348px;
+ } 
+}
+
+.career__description {
+  @include for-size(tablet){
+    width: 314px;
+    order: 2;
+ } 
+  &>.bullet-list{
+  padding: 0;
+  width: 305px;
+  font-size: rem(13.5);
+  margin: auto;
+    @include for-size(tablet){
+      margin: 0;
+      width: 196px;
+    }  
+  }
+  &> .bullet-list .bullet-list__title {
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    padding-left: 24px;
+    @include for-size(tablet){
+      font-size: 10px;
+      padding: 0;
+      margin-bottom: 14px;
+   }
+  }
+  &> .bullet-list .bullet-list__description {
+    @include for-size(tablet){
+      font-size: rem(8);
+   }
+    @include for-size(desktop){
+      font-size: rem(8.75);
+   }
+  }
+  &> .bullet-list .bullet-list__item {
+    position: relative;
+    &::before {
+      @include pseudo(rem(7), rem(7));
+      position: absolute;
+      background-color: $black-color;
+      left: rem(0);
+      top: rem(5);
+      @include for-size(tablet){
+        top: -23px;
+     }
+     
+    }
+  }
+  &> .bullet-list .bullet-list__item {
+    @include for-size(desktop){
+    width: 220px;
+ }
+    
+  }
+}
+

@@ -9,27 +9,27 @@
   @include for-size(tablet) {
     padding-bottom: 94px;
   }
-}
 
-.section-five-title {
-  margin: 0 auto;
-  max-width: 200px;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-}
-
-.section-five-description {
-  max-width: 272px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  @include for-size(tablet) {
-    width: 106px;
-    line-height: 1.5;
+  &-title {
+    margin: 0 auto;
+    max-width: 200px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
   }
 
-  @include for-size(desktop) {
-    width: 124px;
-    line-height: 1.5;
+  &-description {
+    max-width: 272px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    @include for-size(tablet) {
+      width: 126px;
+      line-height: 1.5;
+    }
+
+    @include for-size(desktop) {
+      width: 124px;
+      line-height: 1.5;
+    }
   }
 }
 
@@ -60,7 +60,7 @@
   }
 
   &__item-text {
-    font-size: 12px;
+    font-size: rem(12);
   }
 
   & .slick-arrow {
@@ -128,7 +128,7 @@
 
   & .slick-dots li {
     position: relative;
-    font-size: 10px;
+    font-size: rem(10);
   }
 
   & .slick-dots li.slick-active {
@@ -165,7 +165,7 @@
     border: none;
     outline: none;
     font-weight: 800;
-    font-size: 10px;
+    font-size: rem(10);
     cursor: pointer;
   }
 
@@ -196,17 +196,17 @@
 
 .slider__item-name {
   width: 55px;
-  font-size: 6px;
+  font-size: rem(6);
   line-height: 1.7;
   text-transform: uppercase;
 
   @include for-size(tablet) {
-    font-size: 8px;
+    font-size: rem(8);
     width: 76px;
   }
 
   @include for-size(tablet) {
-    font-size: 9px;
+    font-size: rem(9);
     width: 94px;
   }
 }
