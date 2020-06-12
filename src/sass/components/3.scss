@@ -24,10 +24,10 @@
   &__description {
     @include for-size(tablet) {
       margin-left: 38px;
+      max-width: 130px;
     }
     @include for-size(desktop) {
       line-height: 15px;
-      padding-right: 50px;
     }
   }
 
@@ -42,8 +42,22 @@
 
     &-item {
       margin-bottom: 28px;
+      position: relative;
+
+      &::before {
+        @include pseudo(10px, 10px);
+        position: absolute;
+        top: 7px;
+        left: -20px;
+        background-color: $orange-color;
+        @include for-size(tablet) {
+          visibility: hidden;
+        }
+      }
+
       @include for-size(tablet) {
         max-width: 150px;
+        margin-right: 16px;
       }
 
       @include for-size(desktop) {
@@ -81,8 +95,6 @@
       font-weight: 800;
       font-size: rem(23);
       text-transform: uppercase;
-      padding-left: 16px;
-      position: relative;
 
       @include for-size(tablet) {
         font-size: rem(17);
@@ -94,23 +106,13 @@
           font-size: rem(9);
         }
       }
-      &::before {
-        @include pseudo(10px, 10px);
-        position: absolute;
-        top: 9px;
-        left: -5px;
-        background-color: $orange-color;
-        @include for-size(tablet) {
-          visibility: hidden;
-        }
-      }
     }
 
     &-item-description {
       font-weight: 500;
       font-size: rem(14);
-      display: inline-block;
-      margin-left: 16px;
+      display: inline;
+
       @include for-size(tablet) {
         font-size: rem(8);
       }
@@ -121,7 +123,7 @@
       font-weight: 400;
       font-size: rem(14);
       line-height: 19.5px;
-      padding-left: 16px;
+
       color: #3f4144;
       @include for-size(tablet) {
         font-size: rem(8);
