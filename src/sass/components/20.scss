@@ -1,0 +1,47 @@
+.twenty-one {
+  background-color: $footer-color;
+}
+.footer {
+  display: flex;
+  height: 105px;
+  align-items: center;
+  color: $white-color;
+  &__button {
+    border: 1px solid #1b4371;
+    flex: 0 0 121px;
+    height: 20px;
+    font-size: rem(9);
+    background-color: $footer-color;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+}
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &-item {
+    flex: 0 0 90px;
+  }
+  &-title {
+    font-size: rem(10);
+    text-transform: uppercase;
+  }
+  &-description {
+    color: $footer-grey-color;
+    font-size: rem(9);
+  }
+}
+.footer__list-item:last-child {
+  display: none;
+}
+.footer__list-item:nth-child(2) {
+  display: none;
+}
+
+.contacts-link {
+  color: $footer-grey-color;
+  font-size: rem(9);
+  line-height: 10px;
+}
