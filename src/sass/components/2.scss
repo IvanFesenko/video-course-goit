@@ -34,6 +34,11 @@
         max-width: 228px;
         margin-bottom: 36px;
       }
+
+      @include for-size(desktop) {
+        font-size: rem(10);
+        line-height: 15px;
+      }
     }
   }
 
@@ -45,6 +50,24 @@
 
   &-img-wrp {
     margin-bottom: 45px;
+    position: relative;
+
+    &::before {
+      content: 'you';
+      font-weight: 800;
+      font-size: 140px;
+      text-transform: uppercase;
+      position: absolute;
+      color: #000;
+      opacity: 5%;
+      z-index: -1;
+      transform: rotate(90deg);
+      top: 208px;
+      left: -94px;
+      @include for-size(tablet) {
+        top: 300px;
+      }
+    }
   }
 
   &__list-title {
@@ -121,6 +144,10 @@
 
   @include for-size(tablet) {
     font-size: rem(10);
+  }
+  @include for-size(desktop) {
+    font-size: rem(11);
+    line-height: 18.75px;
   }
 }
 
