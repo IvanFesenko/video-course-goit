@@ -1,19 +1,19 @@
 .registration {
   padding-top: rem(72);
 
-  @include for-size (tablet) {
+  @include for-size(tablet) {
     padding-top: rem(100);
     padding-bottom: rem(98);
   }
 
-  @include for-size (desktop) {
+  @include for-size(desktop) {
     padding-top: rem(66);
     padding-bottom: rem(126);
   }
 
   &__content {
-    @include for-size (tablet) {
-      @include flexible (space-between)
+    @include for-size(tablet) {
+      @include flexible(space-between);
     }
   }
 
@@ -24,12 +24,12 @@
     max-width: rem(210);
     position: relative;
 
-    @include for-size (tablet) {
+    @include for-size(tablet) {
       margin: rem(0);
       max-width: rem(282);
     }
 
-    @include for-size (desktop) {
+    @include for-size(desktop) {
       max-width: rem(314);
     }
 
@@ -44,14 +44,14 @@
       color: $pseudo-spaces-color;
       text-transform: uppercase;
 
-      @include for-size (tablet) {
+      @include for-size(tablet) {
         left: rem(134);
         top: rem(16);
         font-size: rem(146);
         z-index: -1;
       }
 
-      @include for-size (desktop) {
+      @include for-size(desktop) {
         left: rem(150);
         font-size: rem(162);
       }
@@ -62,11 +62,11 @@
     margin-bottom: rem(22);
     line-height: rem(24);
 
-    @include for-size (tablet) {
+    @include for-size(tablet) {
       line-height: rem(34);
     }
 
-    @include for-size (desktop) {
+    @include for-size(desktop) {
       line-height: rem(38);
       margin-bottom: rem(28);
     }
@@ -81,15 +81,15 @@
     padding-left: rem(14);
     line-height: rem(20);
 
-    @include for-size (tablet) {
+    @include for-size(tablet) {
       padding-left: rem(46);
       padding-right: rem(56);
       line-height: rem(14);
     }
 
-    @include for-size (desktop) {
+    @include for-size(desktop) {
       padding-left: rem(48);
-      padding-right: rem(58) ;
+      padding-right: rem(58);
       line-height: rem(15);
     }
 
@@ -98,12 +98,12 @@
       height: rem(4);
       left: rem(-14);
 
-      @include for-size (tablet) {
+      @include for-size(tablet) {
         width: rem(29);
         height: rem(5);
       }
 
-      @include for-size (desktop) {
+      @include for-size(desktop) {
         width: rem(32);
       }
     }
@@ -115,26 +115,23 @@
     line-height: 1.5;
     width: rem(210);
     height: rem(44);
-    box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
     transition: 0.3s linear;
 
     &:hover {
       background-color: $accent-blue-color;
     }
 
-    @include for-size (tablet) {
+    @include for-size(tablet) {
       width: rem(147);
       height: rem(29);
       font-size: rem(7);
-      box-shadow: 0px 7px 10px 0px rgba(196, 87, 15, 0.26);
       transform: translateX(46px);
     }
 
-    @include for-size (desktop) {
+    @include for-size(desktop) {
       width: rem(164);
       height: rem(34);
       font-size: rem(8);
-      box-shadow: 0px 9px 13px 0px rgba(196, 87, 15, 0.26);
     }
   }
 
@@ -143,14 +140,14 @@
     margin-right: auto;
     max-width: rem(300);
 
-    @include for-size (tablet) {
+    @include for-size(tablet) {
       margin-left: rem(0);
       margin-right: rem(0);
       max-width: rem(246);
       padding-left: rem(22);
     }
 
-    @include for-size (desktop) {
+    @include for-size(desktop) {
       max-width: rem(276);
     }
   }
@@ -163,13 +160,13 @@
     color: $black-color;
     position: relative;
 
-    @include for-size (tablet) {
+    @include for-size(tablet) {
       margin-bottom: rem(14);
       font-size: rem(9);
       line-height: rem(14);
     }
 
-    @include for-size (desktop) {
+    @include for-size(desktop) {
       margin-bottom: rem(16);
       font-size: rem(10);
       line-height: rem(15);
@@ -185,7 +182,7 @@
       color: $black-color;
       text-transform: uppercase;
 
-      @include for-size (tablet) {
+      @include for-size(tablet) {
         font-size: rem(16);
         line-height: rem(20);
         position: absolute;
@@ -193,7 +190,7 @@
         left: rem(-60);
       }
 
-      @include for-size (desktop) {
+      @include for-size(desktop) {
         font-size: rem(19);
         line-height: rem(22);
         left: rem(-74);
@@ -209,7 +206,7 @@
     color: $text-grey-color;
     letter-spacing: rem(-0.632);
 
-    @include for-size (tablet) {
+    @include for-size(tablet) {
       margin-bottom: rem(26);
       padding-right: rem(15);
       font-size: rem(8);
@@ -217,7 +214,7 @@
       letter-spacing: rem(0);
     }
 
-    @include for-size (desktop) {
+    @include for-size(desktop) {
       margin-bottom: rem(30);
       font-size: rem(9);
       line-height: rem(13);
@@ -231,13 +228,13 @@
     color: $black-color;
     letter-spacing: rem(-0.715);
 
-    @include for-size (tablet) {
+    @include for-size(tablet) {
       font-size: rem(9);
       line-height: rem(12);
       letter-spacing: rem(0);
     }
 
-    @include for-size (desktop) {
+    @include for-size(desktop) {
       font-size: rem(10);
       line-height: rem(13);
     }
@@ -252,12 +249,12 @@
     line-height: rem(20);
     color: $orange-color;
 
-    @include for-size (tablet) {
+    @include for-size(tablet) {
       font-size: rem(9);
       line-height: rem(14);
     }
 
-    @include for-size (desktop) {
+    @include for-size(desktop) {
       font-size: rem(10);
       line-height: rem(15);
     }
