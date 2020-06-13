@@ -107,6 +107,7 @@
     }
 
     &-item-text {
+      margin-bottom: 22px;
       font-size: rem(13);
       line-height: 19.5px;
       font-weight: 500;
@@ -177,14 +178,16 @@
     font-size: rem(14);
     line-height: 19.5px;
     max-width: 300px;
+
     @include for-size(tablet) {
       font-size: rem(10);
       line-height: 13.6px;
       max-width: 180px;
     }
-  }
 
-  @include for-size(tablet) {
-    justify-content: flex-end;
+    @include for-size(desktop) {
+      justify-content: flex-end;
+      max-width: 147px;
+    }
   }
 }
