@@ -1,7 +1,6 @@
 .footer-two {
   @include background-settings();
   background-color: rgb(32, 32, 32);
-  }
 
   &__link {
     font-weight: 300;
@@ -34,5 +33,5 @@
   @include for-size(tablet) {
     padding-top: rem(10);
     padding-bottom: rem(10);
-
+  }
 }
