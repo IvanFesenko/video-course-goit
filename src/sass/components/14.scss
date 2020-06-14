@@ -1,0 +1,114 @@
+.present {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  &__img-bg-wrap {
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  &__substrate-text {
+    text-transform: uppercase;
+    font-weight: 800;
+    writing-mode: vertical-rl;
+    font-size: rem(226.25);
+    opacity: 0.06;
+    position: absolute;
+    letter-spacing: -0.625rem;
+    z-index: -1;
+    top: -15px;
+    right: 15px;
+    @media screen and (min-width: 768px) {
+      right: -15px;
+      top: -20px;
+    }
+  }
+
+  &__header {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 55px;
+
+    .present__title-main {
+      width: 295px;
+      line-height: 1.5em;
+
+      @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    }
+
+    .section-description {
+      width: 295px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 37px;
+
+      &::before {
+        left: 0;
+      }
+    }
+  }
+
+  &__content-wrap {
+    @media screen and (max-width: 767px) {
+      max-width: 365px;
+    }
+  }
+
+  &__list {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.present__img-wrap {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.present__coment {
+  margin-bottom: 20px;
+}
+
+.present__coment span {
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.present__header .section-description {
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 215px;
+  }
+}
+
+.present__list {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+.new-title {
+  font-size: rem(13.5);
+}
+
+// @media screen and (min-width: 768px);
