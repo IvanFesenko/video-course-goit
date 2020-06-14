@@ -117,10 +117,6 @@
     height: rem(44);
     transition: 0.3s linear;
 
-    &:hover {
-      background-color: $accent-blue-color;
-    }
-
     @include for-size(tablet) {
       width: rem(147);
       height: rem(29);
