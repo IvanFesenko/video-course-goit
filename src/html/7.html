@@ -10,13 +10,13 @@
       </p>
     </div>
 
-    <img
-      srcset="./images/7/man-m.jpg 446w, ./images/7/man-t.jpg 274w, ./images/7/man-d.jpg 306w"
-      src="./images/7/man-d.jpg "
-      sizes="(min-width: 768px) 274px,  (min-width: 900px) 306px"
-      alt="man"
-      class="section-seven__img"
-    />
+    <div class="section-seven__first-img-wrp">
+      <picture>
+        <source media="(min-width: 900px)" srcset="./images/7/man-d.jpg" />
+        <source media="(min-width: 768px)" srcset="./images/7/man-t.jpg" />
+        <img class="section-seven__img" src="./images/7/man-m.jpg" alt="man" />
+      </picture>
+    </div>
 
     <div class="first-content-wrp content-wrp">
       <h3 class="content-wrp__title">
@@ -38,13 +38,11 @@
     </div>
 
     <div class="section-seven__img-wrp">
-      <img
-        srcset="./images/7/oldMan-m.jpg 446w, ./images/7/oldMan-t.jpg 274w, ./images/7/oldMan-d.png 306w"
-        src="./images/7/oldMan-m.jpg"
-        sizes="(min-width: 768px) 274px,  (min-width: 900px) 306px"
-        alt="man"
-        class="section-seven__second-img"
-      />
+      <picture>
+        <source media="(min-width: 900px)" srcset="./images/7/oldMan-d.jpg" />
+        <source media="(min-width: 768px)" srcset="./images/7/oldMan-t.jpg" />
+        <img class="section-seven__second-img" src="./images/7/oldMan-m.jpg" alt="oldMan" />
+      </picture>
     </div>
 
     <div class="second-content-wrp content-wrp">

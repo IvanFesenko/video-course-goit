@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid blue;
+}
+
 .black-bg-separate-words {
   background-color: $black-color;
   color: #ffffff;
@@ -5,11 +9,11 @@
 
 .section-seven {
   @include for-size(tablet) {
-    padding-bottom: 100px;
+    padding-bottom: rem(100);
   }
 
   @include for-size(desktop) {
-    padding-bottom: 125px;
+    padding-bottom: rem(115);
   }
 }
 
@@ -17,20 +21,20 @@
   @include for-size(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 210px 156px 104px;
+    grid-template-rows: rem(215) rem(156) rem(104);
     align-items: start;
     grid-column-gap: 50px;
   }
 
   @include for-size(desktop) {
-    grid-template-rows: 222px 140px 120px;
+    grid-template-rows: rem(224) rem(140) rem(146);
   }
 }
 
 .title-wrp {
   margin: 0 auto;
-  margin-bottom: 34px;
-  max-width: 344px;
+  margin-bottom: rem(34);
+  max-width: rem(344);
 
   @include for-size(tablet) {
     grid-column: 1/1;
@@ -40,31 +44,31 @@
 }
 
 .section-seven-title {
-  max-width: 214px;
-  margin-bottom: 16px;
+  max-width: rem(214);
+  margin-bottom: rem(16);
 
   @include for-size(desktop) {
-    max-width: 251px;
+    max-width: rem(251);
   }
 }
 
 .section-seven-description {
   @include for-size(tablet) {
-    max-width: 140px;
+    max-width: rem(140);
     margin: 0 auto;
     line-height: rem(13.46);
   }
 
   @include for-size(desktop) {
     font-size: 0.6rem;
-    max-width: 177px;
+    max-width: rem(177);
     line-height: rem(15);
   }
 }
 
 .section-seven__img {
   margin: 0 auto;
-  margin-bottom: 16px;
+  margin-bottom: rem(16);
   @include for-size(tablet) {
     margin: 0;
     margin-left: auto;
@@ -73,11 +77,11 @@
   }
 
   &-wrp {
-    margin-bottom: 16px;
+    margin-bottom: rem(16);
     @include for-size(tablet) {
       grid-column: 1/1;
       grid-row: 2/3;
-      padding-top: 34px;
+      padding-top: rem(34);
     }
   }
 }
@@ -97,43 +101,43 @@
 }
 
 .content-wrp {
-  max-width: 402px;
+  max-width: rem(402);
   margin: 0 auto;
-  margin-bottom: 36px;
+  margin-bottom: rem(36);
 
   @include for-size(tablet) {
     margin: 0;
 
     display: flex;
-    max-width: 308px;
+    max-width: rem(308);
 
     align-items: flex-start;
     margin-left: auto;
   }
 
   @include for-size(desktop) {
-    max-width: 336px;
+    max-width: rem(336);
   }
 
   &__title {
-    margin-bottom: 16px;
+    margin-bottom: rem(16);
     text-transform: uppercase;
-    width: 250px;
+    width: rem(250);
     display: inline-block;
     font-size: rem(13.5);
     line-height: rem(19.5);
     @include for-size(tablet) {
       font-size: rem(8.97);
       line-height: rem(14.58);
-      margin-right: 36px;
-      max-width: 106px;
+      margin-right: rem(36);
+      max-width: rem(106);
     }
 
     @include for-size(desktop) {
       font-size: rem(10);
       line-height: rem(16.25);
-      margin-right: 28px;
-      max-width: 120px;
+      margin-right: rem(28);
+      max-width: rem(120);
     }
   }
 }
@@ -144,18 +148,18 @@
 
 .content-box {
   @include for-size(tablet) {
-    max-width: 178px;
+    max-width: rem(178);
   }
 
   @include for-size(desktop) {
-    max-width: 186px;
+    max-width: rem(186);
   }
 
   &__description {
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 1.4;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: rem(10);
     @include for-size(tablet) {
       font-size: rem(9);
     }

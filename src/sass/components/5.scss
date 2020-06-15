@@ -5,29 +5,37 @@
 }
 
 .section-five {
-  padding-bottom: 56px;
+  padding-bottom: rem(56);
   @include for-size(tablet) {
-    padding-bottom: 94px;
+    padding-bottom: rem(94);
   }
 
   &-title {
     margin: 0 auto;
-    max-width: 200px;
-    margin-bottom: 40px;
+    max-width: rem(200);
+    margin-bottom: rem(40);
     text-transform: uppercase;
+
+    @include for-size(tablet) {
+      line-height: rem(33.65);
+    }
+
+    @include for-size(desktop) {
+      line-height: rem(37.5);
+    }
   }
 
   &-description {
-    max-width: 272px;
+    max-width: rem(472);
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: rem(40);
     @include for-size(tablet) {
-      width: 126px;
+      width: rem(126);
       line-height: 1.5;
     }
 
     @include for-size(desktop) {
-      width: 124px;
+      width: rem(124);
       line-height: 1.5;
     }
   }
@@ -35,24 +43,24 @@
 
 .slider {
   position: relative;
-  padding: 20px 12px 20px 20px;
-  height: 213px;
-  width: 294px;
+  padding: rem(20) rem(12) rem(20) rem(20);
+  height: rem(213);
+  width: rem(294);
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: rem(0) rem(8) rem(14) rem(0) rgba(0, 0, 0, 0.15);
 
   @include for-size(tablet) {
-    width: 422px;
-    height: 305px;
-    box-shadow: 0px 11px 22px 0px rgba(0, 0, 0, 0.15);
-    padding: 30px 12px 30px 30px;
+    width: rem(422);
+    height: rem(305);
+    box-shadow: rem(0) rem(11) rem(22) rem(0) rgba(0, 0, 0, 0.15);
+    padding: rem(30) rem(12) rem(30) rem(30);
   }
 
   @include for-size(desktop) {
-    width: 470px;
-    height: 340px;
-    box-shadow: 0px 14px 27px 0px rgba(0, 0, 0, 0.15);
+    width: rem(470);
+    height: rem(340);
+    box-shadow: rem(0) rem(14) rem(27) rem(0) rgba(0, 0, 0, 0.15);
   }
 
   &__item {
@@ -65,24 +73,24 @@
 
   & .slick-arrow {
     position: absolute;
-    bottom: -16px;
+    bottom: rem(-16);
 
     font-size: 0;
     background-color: $black-color;
-    width: 15px;
-    height: 15px;
+    width: rem(15);
+    height: rem(15);
     border: none;
 
     @include for-size(tablet) {
-      width: 21px;
-      height: 21px;
-      bottom: -22px;
+      width: rem(21);
+      height: rem(21);
+      bottom: rem(-22);
     }
 
     @include for-size(desktop) {
-      width: 24px;
-      height: 24px;
-      bottom: -25px;
+      width: rem(24);
+      height: rem(24);
+      bottom: rem(-25);
     }
   }
 
@@ -95,34 +103,34 @@
 
   & .slick-arrow.slick-prev {
     background-image: url('../images/5/slider/angle-left.svg');
-    right: 16px;
+    right: rem(16);
 
     @include for-size(tablet) {
-      right: 22px;
+      right: rem(22);
     }
 
     @include for-size(desktop) {
-      right: 25px;
+      right: rem(25);
     }
   }
 
   & .slick-arrow.slick-next {
     background-image: url('../images/5/slider/angle-right.svg');
-    right: 0px;
+    right: rem(0);
   }
 
   & .slick-dots {
     display: flex;
     position: absolute;
-    bottom: -16px;
+    bottom: rem(-16);
     font-weight: 800;
 
     @include for-size(tablet) {
-      bottom: -22px;
+      bottom: rem(-22);
     }
 
     @include for-size(desktop) {
-      bottom: -25px;
+      bottom: rem(-25);
     }
   }
 
@@ -137,7 +145,7 @@
     &::before {
       content: '';
       display: inline-block;
-      height: 2px;
+      height: rem(2);
       width: 130%;
       background-color: $black-color;
       position: absolute;
@@ -153,7 +161,7 @@
   }
 
   & .slick-dots li:not(:last-child) {
-    margin-right: 10px;
+    margin-right: rem(10);
   }
 
   & .slick-dots li button::before {
@@ -179,47 +187,47 @@
 }
 
 .slider__item-img-wrp {
-  margin-right: 20px;
+  margin-right: rem(20);
 
   @include for-size(tablet) {
-    width: 76px;
+    width: rem(76);
   }
 
   @include for-size(desktop) {
-    width: 94px;
+    width: rem(94);
   }
 }
 
 .slider__item-img {
-  margin-bottom: 10px;
+  margin-bottom: rem(10);
 }
 
 .slider__item-name {
-  width: 55px;
+  width: rem(55);
   font-size: rem(6);
   line-height: 1.7;
   text-transform: uppercase;
 
   @include for-size(tablet) {
     font-size: rem(8);
-    width: 76px;
+    width: rem(76);
   }
 
   @include for-size(tablet) {
     font-size: rem(9);
-    width: 94px;
+    width: rem(94);
   }
 }
 
 .slider__item-text-wrp {
-  height: 175px;
+  height: rem(175);
   overflow: auto;
 
   @include for-size(tablet) {
-    height: 248px;
+    height: rem(248);
   }
 
   @include for-size(desktop) {
-    height: 286px;
+    height: rem(286);
   }
 }
