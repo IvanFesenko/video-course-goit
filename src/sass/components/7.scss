@@ -23,6 +23,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: rem(215) rem(156) rem(104);
     align-items: start;
+    grid-column-gap: 50px;
   }
 
   @include for-size(desktop) {

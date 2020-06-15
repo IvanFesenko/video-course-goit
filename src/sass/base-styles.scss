@@ -37,6 +37,8 @@
   overflow: hidden;
   z-index: 1;
   position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
 
   &:after,
   &:before {
@@ -47,7 +49,7 @@
     height: 0;
     padding-bottom: 200%;
     background: darken($accent-blue-color, 1%);
-    mix-blend-mode: color-burn;
+    // mix-blend-mode: color-burn;
     top: 0;
     z-index: -1;
     border-radius: 230px;
@@ -68,12 +70,13 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0 0 50px -5px darken($accent-blue-color, 20%);
+    box-shadow: 0 0 50px -5px darken($orange-color, 20%);
 
     &:before,
     &:after {
       transform: translate3d(0, -5em, 0) rotate(180deg);
-      background: darken($accent-blue-color, 20%);
+      // background: darken($accent-blue-color, 20%);
+      background: $accent-blue-color;
     }
   }
 
