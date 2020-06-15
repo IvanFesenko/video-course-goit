@@ -2,7 +2,8 @@
   @media screen and (max-width: 767px) {
     padding-bottom: 30px;
   }
-  @media screen and (min-width: 768px) {
+
+  @include for-size(tablet) {
     padding-top: 50px;
     padding-bottom: 30px;
   }
@@ -26,7 +27,8 @@
     z-index: -1;
     top: -15px;
     right: 15px;
-    @media screen and (min-width: 768px) {
+
+    @include for-size(tablet) {
       right: -15px;
       top: -20px;
     }
@@ -78,7 +80,7 @@
 }
 
 .present__img-wrap {
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     margin-bottom: 20px;
   }
 }
@@ -88,13 +90,13 @@
 }
 
 .present__coment span {
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     display: block;
   }
 }
 
 .present__header .section-description {
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     margin-left: 0;
     margin-right: 0;
     width: 215px;
@@ -102,7 +104,7 @@
 }
 
 .present__list {
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     margin-bottom: 0px;
   }
 }
@@ -110,5 +112,3 @@
 .new-title {
   font-size: rem(13.5);
 }
-
-// @media screen and (min-width: 768px);

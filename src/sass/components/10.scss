@@ -6,7 +6,7 @@
 
   &__img-wrap {
     margin-bottom: 23px;
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       @include flexible(space-between);
       margin-bottom: 55px;
     }
@@ -17,7 +17,7 @@
       display: none;
     }
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       max-width: 50%;
       padding-top: 22px;
       padding-right: 65px;
@@ -27,7 +27,7 @@
       max-width: 177px;
       padding-left: 45px;
 
-      @media screen and (min-width: 900px) {
+      @include for-size(desktop) {
         font-size: rem(10);
         max-width: 198px;
       }
@@ -40,11 +40,11 @@
 
   &__title-main {
     margin-bottom: 25px;
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       font-size: rem(27);
     }
 
-    @media screen and (min-width: 900px) {
+    @include for-size(desktop) {
       font-size: rem(30);
     }
   }
@@ -56,7 +56,7 @@
       margin-right: auto;
     }
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       @include flexible(space-between);
     }
   }
@@ -67,13 +67,14 @@
     line-height: 1.57em;
     font-weight: 800;
     margin-bottom: 35px;
-    @media screen and (min-width: 768px) {
+
+    @include for-size(tablet) {
       width: 21%;
       font-size: rem(8.97);
       line-height: 1.87em;
     }
 
-    @media screen and (min-width: 900px) {
+    @include for-size(desktop) {
       font-size: rem(10);
     }
   }
@@ -82,7 +83,7 @@
     font-size: rem(12.92);
     line-height: 1.57em;
     margin-bottom: 50px;
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       width: 74%;
       @include flexible(space-between);
       flex-wrap: wrap;
@@ -96,18 +97,18 @@
     padding-left: 30px;
     position: relative;
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       width: 146px;
       padding-left: 22px;
     }
 
-    @media screen and (min-width: 900px) {
+    @include for-size(desktop) {
       width: 165px;
     }
   }
 
   &__item:not(:nth-last-child(-n + 3)) {
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       margin-bottom: 25px;
     }
   }
@@ -124,7 +125,8 @@
     top: 20px;
     left: -19px;
     transform: rotate(-90deg);
-    @media screen and (min-width: 768px) {
+
+    @include for-size(tablet) {
       font-size: rem(5.61);
       width: 22px;
       top: 10px;
@@ -135,12 +137,12 @@
   &__list-title {
     font-weight: 700;
     margin-bottom: 11.6px;
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       font-size: rem(8.97);
       line-height: 1.31em;
     }
 
-    @media screen and (min-width: 900px) {
+    @include for-size(desktop) {
       font-size: rem(10);
     }
   }
@@ -148,18 +150,18 @@
   &__list-text {
     color: $text-grey-color;
     font-weight: 400;
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       font-size: rem(7.85);
       line-height: 1.5em;
     }
 
-    @media screen and (min-width: 900px) {
+    @include for-size(desktop) {
       font-size: rem(8.75);
     }
   }
 
   &__footer {
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       @include flexible(flex-end);
       align-items: center;
       flex-direction: row-reverse;
@@ -177,7 +179,7 @@
       margin-bottom: 37px;
     }
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       max-width: 192px;
       font-size: rem(8.97);
       line-height: 1.5em;
@@ -202,7 +204,7 @@
       margin-right: auto;
     }
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet) {
       font-size: rem(6.17);
       margin-right: 35px;
       width: 120px;
