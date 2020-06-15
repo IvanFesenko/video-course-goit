@@ -15,17 +15,12 @@
             IT-специалистов со всего СНГ в онлайн-режиме.
           </p>
         </div>
-        <img
-          class="banner"
-          srcset="
-            ./images/11/img-m.jpg 446w,
-            ./images/11/img-t.jpg 344w,
-            ./images/11/img-d.jpg 384w
-          "
-          src="./images/11/img-m.jpg"
-          sizes="(min-width: 768px) 344px,  (min-width: 900px) 384px"
-          alt="banner"
-        />
+
+        <picture>
+          <source media="(min-width: 900px)" srcset="./images/11/img-d.jpg" />
+          <source media="(min-width: 768px)" srcset="./images/11/img-t.jpg" />
+          <img class="banner" src="./images/11/img-m.jpg" alt="banner-image" />
+        </picture>
       </div>
       <p class="section-description section-eleven-description">
         Онлайн-университете №1 в Украине по IT-обучению, сидя в любимом кресле с

@@ -14,17 +14,21 @@
     <div class="slider">
       <div class="slider__item">
         <div class="slider__item-img-wrp">
-          <img
-            src="./images/5/slider/slider-img-m.jpg"
-            alt="Nina Miroshnychenko"
-            class="slider__item-img"
-            srcset="
-              ./images/5/slider/slider-img-m.jpg 55w,
-              ./images/5/slider/slider-img-t.jpg 79w,
-              ./images/5/slider/slider-img-d.jpg 87w
-            "
-            sizes="(min-width: 768px) 79px,  (min-width: 900px) 87px"
-          />
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="./images/5/slider/slider-img-d.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/5/slider/slider-img-t.jpg"
+            />
+            <img
+              class="slider__item-img"
+              src="./images/5/slider/slider-img-m.jpg"
+              alt="Nina Miroshnychenko"
+            />
+          </picture>
 
           <h3 class="slider__item-name">Nina Miroshnychenko</h3>
         </div>

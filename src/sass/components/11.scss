@@ -1,14 +1,14 @@
 .section-eleven {
-  padding-bottom: 74px;
+  padding-bottom: rem(74);
 }
 
 .section-eleven-bigWrp {
   @include for-size(tablet) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 60px;
+    grid-template-rows: 1fr rem(60);
     align-items: start;
-    margin-bottom: 66px;
+    margin-bottom: rem(66);
   }
 }
 
@@ -19,12 +19,12 @@
 }
 
 .section-eleven-title {
-  max-width: 380px;
+  max-width: rem(380);
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-bottom: rem(22);
 
   @include for-size(tablet) {
-    margin-bottom: 22px;
+    margin-bottom: rem(22);
   }
 }
 
@@ -35,27 +35,27 @@
   }
 
   @include for-size(desktop) {
-    margin-bottom: 16px;
+    margin-bottom: rem(16);
   }
 
   &-title {
-    max-width: 318px;
+    max-width: rem(318);
     margin: 0 auto;
     font-size: 0.875rem;
     line-height: 1.1875rem;
     font-weight: 800;
-    margin-bottom: 16px;
+    margin-bottom: rem(16);
     text-transform: uppercase;
 
     @include for-size(tablet) {
-      max-width: 96px;
+      max-width: rem(96);
       font-size: 0.5625rem;
       line-height: 0.91rem;
-      margin: 0 16px 0 0;
+      margin: 0 rem(16) 0 0;
     }
 
     @include for-size(desktop) {
-      max-width: 104px;
+      max-width: rem(104);
       font-size: rem(10);
       line-height: rem(16.25);
     }
@@ -64,19 +64,19 @@
   &-text {
     font-size: 0.875rem;
     line-height: 1.1875rem;
-    max-width: 318px;
+    max-width: rem(318);
     margin: 0 auto;
-    margin-bottom: 38px;
+    margin-bottom: rem(38);
     @include for-size(tablet) {
-      max-width: 118px;
+      max-width: rem(118);
       font-size: 0.5rem;
       line-height: 0.73rem;
-      margin-bottom: 26px;
-      margin: 0 0 16px 0;
+      margin-bottom: rem(26);
+      margin: 0 0 rem(16) 0;
     }
 
     @include for-size(desktop) {
-      max-width: 128px;
+      max-width: rem(128);
       font-size: rem(8.75);
       line-height: rem(13);
     }
@@ -85,7 +85,7 @@
 
 .banner {
   margin: 0 auto;
-  margin-bottom: 62px;
+  margin-bottom: rem(62);
 
   @include for-size(tablet) {
     margin-bottom: 0;
@@ -95,20 +95,20 @@
 .section-eleven-description {
   font-size: 0.875rem;
   line-height: 1.1875rem;
-  max-width: 292px;
+  max-width: rem(292);
   margin: 0 auto;
-  margin-bottom: 37px;
+  margin-bottom: rem(37);
   font-weight: 500;
 
   @include for-size(tablet) {
-    max-width: 154px;
+    max-width: rem(154);
     margin: 0 auto;
     font-size: rem(9);
     line-height: rem(13.46);
   }
 
   @include for-size(desktop) {
-    max-width: 182px;
+    max-width: rem(182);
     margin: 0 auto;
     font-size: rem(10);
     line-height: rem(15);
@@ -116,21 +116,21 @@
 }
 
 .section-eleven-content-wrp {
-  width: 300px;
+  width: rem(300);
   margin: 0 auto;
 
   @include for-size(tablet) {
     display: grid;
     align-items: start;
-    grid-template-columns: 172px 1fr;
-    grid-template-rows: 42px 1fr;
+    grid-template-columns: rem(172) 1fr;
+    grid-template-rows: rem(42) 1fr;
     width: auto;
     margin: 0;
   }
 }
 
 .it-blackBg-text {
-  margin-bottom: 34px;
+  margin-bottom: rem(34);
   display: inline-block;
 
   @include for-size(tablet) {
@@ -148,7 +148,7 @@
 }
 
 .it-blackBg-second-text {
-  margin-bottom: 34px;
+  margin-bottom: rem(34);
   display: inline-block;
 
   @include for-size(tablet) {
@@ -169,15 +169,15 @@
   @include for-size(tablet) {
     grid-column: 1/1;
     grid-row: 2/2;
-    margin-right: 36px;
+    margin-right: rem(36);
   }
 
   &__title {
     position: relative;
-    max-width: 174px;
+    max-width: rem(174);
     font-size: 0.8rem;
     line-height: 1.1875rem;
-    margin-bottom: 14px;
+    margin-bottom: rem(14);
     font-weight: 800;
     text-transform: uppercase;
     z-index: 1;
@@ -198,35 +198,35 @@
     display: inline-block;
     content: '';
     background-image: url('../images/11/un.png');
-    width: 80px;
-    height: 68px;
+    width: rem(80);
+    height: rem(68);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    right: -122px;
-    top: -44px;
+    right: rem(-122);
+    top: rem(-44);
     z-index: -1;
 
     @include for-size(tablet) {
       background-image: url('../images/11/un-t.png');
-      width: 58px;
-      height: 50px;
+      width: rem(58);
+      height: rem(50);
       right: 0px;
-      top: -36px;
+      top: rem(-36);
     }
 
     @include for-size(desktop) {
       background-image: url('../images/11/un-d.png');
-      width: 64px;
-      height: 55px;
-      right: -17px;
+      width: rem(64);
+      height: rem(55);
+      right: rem(-17);
     }
   }
 
   &__description {
     font-size: 0.8rem;
     line-height: 1.1875rem;
-    margin-bottom: 40px;
+    margin-bottom: rem(40);
 
     @include for-size(tablet) {
       margin-bottom: 0;
@@ -253,7 +253,7 @@
     position: relative;
 
     @include for-size(tablet) {
-      max-width: 86px;
+      max-width: rem(86);
     }
 
     &::before {
@@ -262,7 +262,7 @@
       color: #f2f2f2;
       position: absolute;
       transform: rotate(270deg);
-      right: -64px;
+      right: rem(-64);
       top: 0px;
       z-index: -1;
 
@@ -285,21 +285,21 @@
 
     &:nth-child(1)::after {
       background-image: url('../images/11/prize1.png');
-      width: 41px;
-      height: 136px;
-      right: -44px;
+      width: rem(41);
+      height: rem(136);
+      right: rem(-44);
 
       @include for-size(tablet) {
         background-image: url('../images/11/prize1-t.png');
-        width: 29px;
-        height: 98px;
-        right: -44px;
+        width: rem(29);
+        height: rem(98);
+        right: rem(-44);
       }
 
       @include for-size(desktop) {
         background-image: url('../images/11/prize1-d.png');
-        width: 32px;
-        height: 109px;
+        width: rem(32);
+        height: rem(109);
       }
     }
 
@@ -307,28 +307,28 @@
       content: '02_';
 
       @include for-size(tablet) {
-        right: -73px;
+        right: rem(-73);
       }
     }
 
     &:nth-child(2)::after {
       background-image: url('../images/11/prize2.png');
-      width: 54px;
-      height: 109px;
-      right: -52px;
+      width: rem(54);
+      height: rem(109);
+      right: rem(-52);
 
       @include for-size(tablet) {
         background-image: url('../images/11/prize2-t.png');
-        width: 40px;
-        height: 79px;
-        right: -44px;
+        width: rem(40);
+        height: rem(79);
+        right: rem(-44);
       }
 
       @include for-size(desktop) {
         background-image: url('../images/11/prize2-d.png');
-        width: 45px;
-        height: 88px;
-        right: -46px;
+        width: rem(45);
+        height: rem(88);
+        right: rem(-46);
       }
     }
 
@@ -336,42 +336,42 @@
       content: '03_';
 
       @include for-size(tablet) {
-        right: -73px;
+        right: rem(-73);
       }
     }
 
     &:nth-child(3)::after {
       background-image: url('../images/11/prize2.png');
-      width: 54px;
-      height: 109px;
-      right: -52px;
+      width: rem(54);
+      height: rem(109);
+      right: rem(-52);
 
       @include for-size(tablet) {
         background-image: url('../images/11/prize2-t.png');
-        width: 40px;
-        height: 79px;
-        right: -44px;
+        width: rem(40);
+        height: rem(79);
+        right: rem(-44);
       }
 
       @include for-size(desktop) {
         background-image: url('../images/11/prize2-d.png');
-        width: 45px;
-        height: 88px;
-        right: -46px;
+        width: rem(45);
+        height: rem(88);
+        right: rem(-46);
       }
     }
 
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: rem(40);
 
       @include for-size(tablet) {
         margin-bottom: 0;
-        margin-right: 80px;
+        margin-right: rem(80);
       }
     }
 
     &-title {
-      margin-bottom: 10px;
+      margin-bottom: rem(10);
       text-transform: uppercase;
 
       @include for-size(tablet) {
@@ -391,7 +391,7 @@
     }
 
     &-subtitle {
-      margin-bottom: 6px;
+      margin-bottom: rem(6);
       font-size: 0.49rem;
       line-height: 0.73rem;
     }
