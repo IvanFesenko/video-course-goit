@@ -11,6 +11,39 @@
     }
   }
 
+  &__title {
+    font-size: rem(20);
+    .black-bg {
+      display: block;
+      max-width: 260px;
+    }
+    @include for-size(tablet) {
+      font-size: rem(27);
+      max-width: 240px;
+
+      .black-bg {
+        display: inline;
+        line-height: 37px;
+      }
+    }
+  }
+
+  &__motto {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: rem(15);
+    margin-bottom: 10px;
+    margin-left: 40px;
+
+    @include for-size(tablet) {
+      font-size: rem(10);
+    }
+    @include for-size(desktop) {
+      font-size: rem(11);
+      line-height: 18.75px;
+    }
+  }
+
   &__description {
     font-size: rem(13);
     line-height: 19.5px;
@@ -70,6 +103,12 @@
     }
   }
 
+  &__list-wrp {
+    @include for-size(desktop) {
+      @include flexible(space-between);
+    }
+  }
+
   &__list-title {
     font-size: rem(13);
     font-weight: 800;
@@ -80,7 +119,12 @@
     @include for-size(tablet) {
       font-size: rem(17);
     }
+
+    @include for-size(desktop) {
+      flex: 0 0 25%;
+    }
   }
+
   &__list {
     padding-left: 38px;
     padding-right: 20px;
@@ -101,8 +145,56 @@
         }
       }
 
+      &--order-one {
+        @include for-size(desktop) {
+          order: 1;
+        }
+      }
+      &--order-two {
+        @include for-size(desktop) {
+          order: 2;
+        }
+      }
+      &--order-three {
+        @include for-size(desktop) {
+          order: 3;
+          margin-right: 0;
+        }
+      }
+      &--order-four {
+        @include for-size(desktop) {
+          order: 4;
+        }
+      }
+      &--order-five {
+        @include for-size(desktop) {
+          order: 5;
+        }
+      }
+      &--order-six {
+        @include for-size(desktop) {
+          order: 6;
+          margin-right: 0;
+        }
+      }
+      &--order-seven {
+        @include for-size(desktop) {
+          order: 7;
+        }
+      }
+      &--order-eight {
+        @include for-size(desktop) {
+          order: 8;
+        }
+      }
+
       @include for-size(tablet) {
         flex: 0 0 22%;
+      }
+
+      @include for-size(desktop) {
+        flex: 0 0 28%;
+        margin-right: 27px;
       }
     }
 
@@ -129,42 +221,15 @@
       flex-wrap: wrap;
       padding: 0;
     }
+
+    @include for-size(desktop) {
+      flex: 0 0 75%;
+      justify-content: flex-start;
+    }
   }
+
   @include for-size(tablet) {
     padding-top: 106px;
-  }
-}
-
-.facts__description {
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: rem(15);
-  margin-bottom: 10px;
-  margin-left: 40px;
-
-  @include for-size(tablet) {
-    font-size: rem(10);
-  }
-  @include for-size(desktop) {
-    font-size: rem(11);
-    line-height: 18.75px;
-  }
-}
-
-.facts__title {
-  font-size: rem(20);
-  .black-bg {
-    display: block;
-    max-width: 260px;
-  }
-  @include for-size(tablet) {
-    font-size: rem(27);
-    max-width: 240px;
-
-    .black-bg {
-      display: inline;
-      line-height: 37px;
-    }
   }
 }
 

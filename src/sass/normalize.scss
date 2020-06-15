@@ -150,7 +150,8 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 
-img {
+img,
+picture {
   border-style: none;
   display: block;
   max-width: 100%;
