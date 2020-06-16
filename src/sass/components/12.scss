@@ -5,20 +5,19 @@
   flex-direction: column;
 
   @include for-size(tablet) {
-    flex-wrap: wrap-reverse;
-    align-content: space-between;
-    max-height: 470px;
-    display: flex;
     padding-top: rem(40);
+    position: relative;
+    align-items: flex-end;
   }
 }
 
 .expert__title {
   @include for-size(tablet) {
-    width: 260px;
+    width: 48%;
+    padding-left: 50px;
   }
   @include for-size(desktop) {
-    width: 286px;
+    // width: 286px;
   }
   & > .section-title {
     text-transform: uppercase;
@@ -41,19 +40,20 @@
     }
   }
   & > .section-description {
-    max-width: 263px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 0 80px 0 120px;
     margin-bottom: rem(40);
-    padding-left: rem(26);
     font-size: rem(13.5);
     line-height: 19.5px;
+    @include for-size(tablet) {
+      padding: 0 0 0 120px;
+    }
     &::before {
-      left: rem(2);
+      left: rem(85);
       width: rem(15);
       @include for-size(tablet) {
         width: rem(29);
         height: rem(4);
+        left: 0;
       }
     }
     @include for-size(tablet) {
@@ -79,17 +79,25 @@
   @include flexible(center);
   margin-bottom: 36px;
   @include for-size(tablet) {
-    max-width: 50%;
+    width: 48%;
     order: 1;
-    margin-bottom: 35px;
     justify-content: start;
+    position: absolute;
+    left: 0;
+    margin: 0;
   }
   @include for-size(desktop) {
-    width: 350px;
+    // width: 350px;
   }
 }
 
 .expert__description {
+  @include for-size(tablet) {
+    display: block;
+    width: 48%;
+    padding-left: 50px;
+  }
+
   & > .bullet-list {
     padding: 0;
     margin: auto;
