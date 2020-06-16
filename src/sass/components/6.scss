@@ -54,48 +54,39 @@
   @include for-size(tablet) {
     flex: 0 0 48%;
   }
-  @include for-size(desktop) {
-    width: 350px;
-  }
   & > .section-title {
-    width: 200px;
+    padding: 0 120px 0 120px;
     text-transform: uppercase;
     text-align: left;
+
     margin-right: auto;
     margin-left: auto;
     margin-bottom: rem(18);
     @include for-size(tablet) {
-      width: 300px;
-      margin-right: 0;
-      margin-left: 0;
+      padding: 0;
       margin-bottom: rem(10);
       line-height: rem(36);
-    }
-    @include for-size(desktop) {
-      width: 350px;
+      font-size: 23px;
     }
   }
   & > .section-description {
-    width: 270px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 0 110px 0 120px;
     margin-bottom: rem(40);
-    padding-left: rem(35);
     font-size: rem(13.5);
     &::before {
-      left: rem(2);
+      left: 90px;
       width: rem(21);
       @include for-size(tablet) {
         width: rem(29);
         height: rem(4);
+        left: 0;
       }
     }
     @include for-size(tablet) {
       margin-left: 0;
-      padding-left: rem(50);
-      width: 200px;
       font-size: rem(9);
       line-height: rem(13);
+      padding: 0 100px 0 50px;
     }
   }
   & > .bullet-list .bullet-list__item:nth-child(-n + 4) {

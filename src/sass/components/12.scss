@@ -16,9 +16,6 @@
     width: 48%;
     padding-left: 50px;
   }
-  @include for-size(desktop) {
-    // width: 286px;
-  }
   & > .section-title {
     text-transform: uppercase;
     text-align: center;
@@ -27,7 +24,6 @@
     margin-bottom: rem(18);
 
     @include for-size(tablet) {
-      width: 260px;
       margin-right: 0;
       margin-left: 0;
       margin-bottom: rem(10);
@@ -45,7 +41,9 @@
     font-size: rem(13.5);
     line-height: 19.5px;
     @include for-size(tablet) {
-      padding: 0 0 0 120px;
+      padding: 0 10px 0 50px;
+      font-size: rem(9);
+      line-height: rem(13);
     }
     &::before {
       left: rem(85);
@@ -55,13 +53,6 @@
         height: rem(4);
         left: 0;
       }
-    }
-    @include for-size(tablet) {
-      margin-left: 0;
-      padding-left: rem(50);
-      width: 250px;
-      font-size: rem(9);
-      line-height: rem(13);
     }
   }
   & > .bullet-list .bullet-list__item:nth-child(-n + 4) {
@@ -99,15 +90,9 @@
   }
 
   & > .bullet-list {
-    padding: 0;
-    margin: auto;
-    width: 292px;
-    padding-left: rem(22);
+    padding: 0 75px 0 100px;
     @include for-size(tablet) {
-      padding-left: rem(30);
-      padding-right: 0;
-      margin-left: 0;
-      width: 230px;
+      padding: 0 0 0 30px;
     }
     @include for-size(desktop) {
       width: 235px;
