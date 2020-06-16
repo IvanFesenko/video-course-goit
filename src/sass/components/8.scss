@@ -1,12 +1,9 @@
 .career {
   padding-top: 20px;
-  padding-bottom: 40px;
   @include for-size(tablet) {
-    height: 470px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-between;
+    justify-content: space-between;
     padding-top: 40px;
   }
 }
@@ -15,20 +12,22 @@
   @include flexible(center);
   margin-bottom: 20px;
   @include for-size(tablet) {
-    max-width: 322px;
-    order: 1;
+    flex: 0 0 48%;
     margin-bottom: 35px;
-    @include flexible(start);
+    padding-right: 38px;
+    order: 1;
+    display: block;
   }
 }
 
 .career__title {
-  width: 310px;
+  padding: 0 70px 0 70px;
   margin: auto;
   @include for-size(tablet) {
-    max-width: 322px;
+    flex: 0 0 48%;
+    padding: 0;
     margin: 0;
-    order: 3;
+    order: 2;
   }
   @include for-size(desktop) {
     width: 348px;
@@ -38,8 +37,8 @@
     font-size: rem(18);
     margin-bottom: rem(10);
     @include for-size(tablet) {
-      font-size: rem(27);
-      margin-top: rem(15);
+      font-size: rem(24);
+      margin: rem(15) 0 rem(25) 0;
     }
     @include for-size(desktop) {
       margin-top: rem(25);
@@ -55,6 +54,7 @@
       width: 235px;
       padding-left: rem(47);
       margin-bottom: rem(40);
+      line-height: 12px;
     }
     @include for-size(desktop) {
       font-size: rem(10);
@@ -75,18 +75,18 @@
 .career__member {
   margin-bottom: rem(20);
   @include for-size(tablet) {
-    order: 4;
+    flex: 0 0 48%;
     margin-bottom: 0;
-  }
-  @include for-size(tablet) {
-    max-width: 322px;
+    order: 4;
+    position: relative;
+    top: -65px;
   }
 }
 
 .career__description {
   @include for-size(tablet) {
-    max-width: 322px;
-    order: 2;
+    flex: 0 0 48%;
+    order: 3;
   }
   & > .bullet-list {
     padding: 0;
@@ -133,5 +133,23 @@
     @include for-size(desktop) {
       width: 220px;
     }
+  }
+}
+
+.career__member picture {
+  @include for-size(tablet) {
+    // max-width: 50%;
+    flex: 0 0 50%;
+    height: auto;
+    position: relative;
+  }
+}
+
+.career__image picture {
+  @include for-size(tablet) {
+    // max-width: 50%;
+    flex: 0 0 50%;
+    height: auto;
+    position: relative;
   }
 }
