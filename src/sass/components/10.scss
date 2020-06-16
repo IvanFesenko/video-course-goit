@@ -2,34 +2,37 @@
   padding-top: 23px;
   padding-bottom: 83px;
   color: $black-color;
-  box-shadow: 0 0 0 2px rgba(251, 251, 251, 0.1);
 
   &__img-wrap {
     margin-bottom: 23px;
+
     @include for-size(tablet) {
       @include flexible(space-between);
       margin-bottom: 55px;
     }
   }
 
+  &__img {
+    margin-right: 15px;
+  }
+
   &__title-wrap {
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile) {
       display: none;
     }
 
     @include for-size(tablet) {
       max-width: 50%;
       padding-top: 22px;
-      padding-right: 65px;
     }
 
     .section-description {
-      max-width: 177px;
+      max-width: rem(177);
       padding-left: 45px;
 
       @include for-size(desktop) {
         font-size: rem(10);
-        max-width: 198px;
+        max-width: rem(198);
       }
 
       &::before {
@@ -50,8 +53,8 @@
   }
 
   &__content-wrap {
-    @media screen and (max-width: 767px) {
-      max-width: 295px;
+    @include for-size(mobile) {
+      max-width: rem(295);
       margin-left: auto;
       margin-right: auto;
     }
@@ -91,19 +94,19 @@
   }
 
   &__item {
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile) {
       margin-bottom: 23.6px;
     }
     padding-left: 30px;
     position: relative;
 
     @include for-size(tablet) {
-      width: 146px;
+      width: rem(142);
       padding-left: 22px;
     }
 
     @include for-size(desktop) {
-      width: 165px;
+      width: rem(165);
     }
   }
 
@@ -119,7 +122,7 @@
     line-height: 1em;
     color: $white-color;
     display: block;
-    width: 47.63px;
+    width: rem(47.63);
     background-color: $orange-color;
     position: absolute;
     top: 20px;
@@ -128,7 +131,7 @@
 
     @include for-size(tablet) {
       font-size: rem(5.61);
-      width: 22px;
+      width: rem(22);
       top: 10px;
       left: -5px;
     }
@@ -171,16 +174,16 @@
   &__coment {
     padding-left: 35px;
 
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile) {
       font-size: rem(13.5);
-      max-width: 380px;
+      max-width: rem(380);
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 37px;
     }
 
     @include for-size(tablet) {
-      max-width: 192px;
+      max-width: rem(192);
       font-size: rem(8.97);
       line-height: 1.5em;
     }
@@ -196,10 +199,10 @@
     font-size: rem(10.87);
     text-transform: uppercase;
     line-height: 1em;
-    width: 216px;
+    width: rem(216);
     height: 49.5px;
 
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile) {
       margin-left: auto;
       margin-right: auto;
     }
@@ -207,7 +210,7 @@
     @include for-size(tablet) {
       font-size: rem(6.17);
       margin-right: 35px;
-      width: 120px;
+      width: rem(120);
       height: 28px;
     }
   }
